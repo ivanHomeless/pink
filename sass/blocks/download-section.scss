@@ -1,0 +1,11 @@
+.download-section__text {
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+}
+@media screen and (min-width: $medium) {
+    .download-section__text {
+        font-size: 18px;
+    }
+}
