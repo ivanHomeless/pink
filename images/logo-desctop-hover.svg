@@ -4,13 +4,10 @@
 	 viewBox="0 0 146.3 40.4" style="enable-background:new 0 0 146.3 40.4;" xml:space="preserve">
 <style type="text/css">
 	.st0 {
-		fill:#FFFFFF;
+		fill:#d22856;
 	}
 	svg {
 		cursor:pointer;
-	}
-	svg:hover .st0 {
-		fill: green;
 	}
 	.st1{fill:#D22856;}
 </style>

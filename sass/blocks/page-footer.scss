@@ -1,0 +1,8 @@
+.page-footer {
+    display: none;
+}
+@media screen and (min-width: $medium) {
+    .page-footer {
+        display: block;
+    }
+}

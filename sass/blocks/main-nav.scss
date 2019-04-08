@@ -10,10 +10,24 @@
     height: 24px;
     background-image: url('../images/menu-burger.svg');
 }
+.main-nav__button:hover {
+    background-image: url('../images/menu-burger-hover.svg');
+}
+.main-nav__button:active {
+    opacity: .3;
+    background-image: url('../images/menu-burger-hover.svg');
+}
 .main-nav__button--close {
     width: 24px;
     height: 24px;
     background-image: url('../images/menu-close.svg');
+}
+.main-nav__button--close:hover {
+    background-image: url('../images/menu-close-hover.svg');
+}
+.main-nav__button--close:active {
+    opacity: .3;
+    background-image: url('../images/menu-close-hover.svg');
 }
 @media screen and (min-width: $large) {
     .main-nav__button {

@@ -1,0 +1,26 @@
+.reviews {
+    padding-top: 45px;
+}
+@media screen and (min-width: $medium) {
+    .reviews {
+        padding-top: 49px;
+    }
+}
+@media screen and (min-width: $large) {
+    .reviews {
+        padding-top: 49px;
+    }
+}
+
+
+.reviews__quote {
+    display: none;
+}
+@media screen and (min-width: $large) {
+    .reviews__quote {
+        width: 80px;
+        height: 64px;
+        display: block;
+        background: url('../images/review-blockquote-icon.svg') no-repeat;
+    }
+}

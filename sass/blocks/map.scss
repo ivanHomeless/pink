@@ -1,0 +1,42 @@
+.map {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+    & iframe {
+        width: 100%;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        top: -1px;
+        border-right: calc(50vw - 5px) solid transparent;
+        border-left: calc(50vw - 5px) solid transparent;
+        border-top: 35px solid #fff;
+        border-bottom: 35px solid transparent;
+    }
+}
+@media screen and (min-width: $medium) {
+    .map {
+        height: 373px;
+        &:before {
+            top: -1px;
+            border-right: calc(50vw - 5px) solid transparent;
+            border-left: calc(50vw - 5px) solid transparent;
+            border-top: 75px solid #fff;
+            border-bottom: 75px solid transparent;
+        }
+    }
+}
+@media screen and (min-width: $large) {
+    .map {
+        height: 500px;
+        &:before {
+            top: -1px;
+            border-right: calc(50vw - 5px) solid transparent;
+            border-left: calc(50vw - 5px) solid transparent;
+            border-top: 120px solid #fff;
+            border-bottom: 120px solid transparent;
+        }
+    }
+}
