@@ -1,0 +1,24 @@
+.button {
+    border: none;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.button--download-app {
+    width: 100%;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    font-weight: 700;
+    color: #fff;
+    font-size: 18px;
+    line-height: 50px;
+}
+.button--download-app:hover {
+    background: #fff;
+    color: #d22856;
+}
+.button--download-app:active {
+    color: #f2ced5;
+}

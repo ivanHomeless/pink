@@ -1,12 +1,38 @@
+@media screen and (min-width: $large) {
+    .main-nav {
+        width: 622px;
+    }
+}
+
+
 .main-nav__button {
-    border: none;
-    outline: none;
-    font-size: 24px;
-    line-height: 24px;
     width: 50px;
     height: 24px;
-    background: url('../images/menu-burger.svg');
+    background-image: url('../images/menu-burger.svg');
 }
+.main-nav__button--close {
+    width: 24px;
+    height: 24px;
+    background-image: url('../images/menu-close.svg');
+}
+@media screen and (min-width: $large) {
+    .main-nav__button {
+        display: none;
+    }
+}
+
+
 .main-nav__list {
     display: none;
+}
+@media screen and (min-width: $large) {
+    .main-nav__list {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.main-nav__list--menu-active {
+    position: absolute;
+    display: block;
+    width: 100%;
 }

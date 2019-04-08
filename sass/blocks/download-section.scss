@@ -1,8 +1,33 @@
+.download-section__OS-list {
+    padding-right: 35px;
+    padding-left: 35px;
+    margin-bottom: 28px;
+    margin-top: 28px;
+}
+@media screen and (min-width: $medium) {
+   .download-section__OS-list {
+        padding-right: 46px;
+        padding-left: 46px;
+        margin-bottom: 45px;
+        margin-top: 45px;
+    }
+}
+@media screen and (min-width: $medium) {
+   .download-section__OS-list {
+        margin-bottom: 65px;
+        margin-top: 65px;
+    }
+}
+
+
 .download-section__text {
+    margin: 0;
+    padding: 0;
     color: #fff;
     font-size: 14px;
     line-height: 24px;
     font-weight: 300;
+    text-align: center;
 }
 @media screen and (min-width: $medium) {
     .download-section__text {

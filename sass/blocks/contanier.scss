@@ -2,15 +2,18 @@
 	width: 280px;
 	margin: 0 auto;
 }
-
 @media screen and (min-width: $medium) {
     .container {
         width: $medium;
     }
 }
-
 @media screen and (min-width: $large) {
     .container {
         width: $large;
+    }
+}
+@media screen and (min-width: $huge) {
+    .container {
+        //width: $huge;
     }
 }

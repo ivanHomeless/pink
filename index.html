@@ -9,57 +9,58 @@
 </head>
 <body>
     <header class="page-header">
-        <div class="page-header__wraper">
-            <div class="page-header__inner">
-                <div class="page-header__top">
-                    <div class="container">
-                        <a class="page-header__logo" href="index.html"></a>
-                    </div>
-                    <nav class="main-nav">
-                        <div class="container"><button class="main-nav__button"></button></div>
-                        <ul class="main-nav__list site-list">
-                            <li class="site-list_item"><a class="site-list__link" href="index.html">Главная</a></li>
-                            <li class="site-list_item"><a class="site-list__link" href="photo.html">Фотографии</a></li>
-                            <li class="site-list_item"><a class="site-list__link" href="form.html">Записаться</a></li>
-                            <li class="site-list_item"><a class="site-list__link" href="http://htmlacademy.ru">HTML Academy</a></li>
-                        </ul>
-                    </nav>
+        <div class="page-header__top">
+            <div class="page-header__top-wraper">
+                <div class="page-header__top-inner">
+                    <div class="page-header__hand-icon"></div>
+                    <a class="page-header__logo" href="index.html"></a>
+                    <button class="main-nav__button button"></button>
                 </div>
-                <div class="page-header__slogan">Взгляни на жизнь ярче!</div>
-                <i class="page-header__promo-icon"></i>
-            </div>
-            <div class="container">
-                <div class="page-header__download-section download-section">
-                    <button class="download-section__button button button--download-app">Скачать приложение</button>
-                    <ul class="download-section__OS-list OS-list">
-                        <li class="OS-list__item OS-list__item--ios"></li>
-                        <li class="OS-list__item OS-list__item--android"></li>
-                        <li class="OS-list__item OS-list__item--windows"></li>
+                <nav class="main-nav">
+                    <ul class="main-nav__list site-list">
+                        <li class="site-list_item"><a class="site-list__link site-list__link--active" href="index.html">Главная</a></li>
+                        <li class="site-list_item"><a class="site-list__link" href="photo.html">Фотографии</a></li>
+                        <li class="site-list_item"><a class="site-list__link" href="form.html">Записаться</a></li>
+                        <li class="site-list_item"><a class="site-list__link" href="http://htmlacademy.ru">HTML Academy</a></li>
                     </ul>
-                    <p class="download-section__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-                </div>
+                </nav>
+            </div>
+        </div>
+        <div class="page-header__bottom container">
+            <div class="page-header__slogan">Взгляните на жизнь иначе!</div>
+            <div class="page-header__download-section download-section">
+                <button class="download-section__button button button--download-app">Скачать приложение</button>
+                <ul class="download-section__OS-list OS-list">
+                    <li class="OS-list__item OS-list__item--ios"></li>
+                    <li class="OS-list__item OS-list__item--android"></li>
+                    <li class="OS-list__item OS-list__item--windows"></li>
+                </ul>
+                <p class="download-section__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
             </div>
         </div>
     </header>
     <main class="page-main">
-        <h2 class="page-title">Устали от серости мегаполиса?</h2>
-        <h2 class="page-title">Нам есть, что вам <br>предложить!</h2>
+        <div class="page-title__wrap container">
+            <h2 class="page-title">Устали от серости мегаполиса?</h2>
+            <h2 class="page-title">Нам есть, что вам <br>предложить!</h2>
+        </div>
         <section class="offers">
-            <ul class="offers__list">
-                <li class="offers__item">
-                    <h3 class="offers__title">Поднимает настроение</h3>
-                    <p class="offers__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-                </li>
-                <li class="offers__item">
-                    <h3 class="offers__title">Меняет мир вокруг</h3>
-                    <p class="offers__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-                </li>
-                <li class="offers__item">
-                    <h3 class="offers__title">Заводит новых друзей</h3>
-                    <p class="offers__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-                </li>
-            </ul>
-            <img src="#" alt="offers" class="offers__img">
+            <div class="offers__wrap container">
+                <ul class="offers__list">
+                    <li class="offers__item">
+                        <h3 class="offers__title">Поднимает настроение</h3>
+                        <p class="offers__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                    </li>
+                    <li class="offers__item">
+                        <h3 class="offers__title">Меняет мир вокруг</h3>
+                        <p class="offers__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                    </li>
+                    <li class="offers__item">
+                        <h3 class="offers__title">Заводит новых друзей</h3>
+                        <p class="offers__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="reviews slider">
             <div class="reviews__list slider__list">
@@ -146,4 +147,5 @@
           <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img crossorigin="copyright__image" src="#"></a>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>

@@ -1,0 +1,21 @@
+.offers {
+    position: relative;
+    background: #f2f2f2;
+}
+.offers:before {
+    content: '';
+    position: absolute;
+    left: -100vw;
+    top: -60px;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid #f2f2f2;
+    border-left: 100vw solid transparent;
+    border-right: 100vw solid #f2f2f2;
+}
+@media screen and (min-width: $medium) {
+    .offers:before {
+        top: -100px;
+        border-top: 50px solid transparent;
+        border-bottom: 50px solid #f2f2f2;
+    }
+}

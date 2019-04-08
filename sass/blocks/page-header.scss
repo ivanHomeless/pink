@@ -1,156 +1,156 @@
 .page-header {
+    position: relative;
     min-height: 733px;
-    max-width: 100%;
-    height: auto;
-    background: #1d2631;
+    background-color: #1d2631;
+    background-image:  url('../images/page-header-mobile-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 463px;
+    background-position: top;
 }
 @media screen and (min-width: $medium) {
     .page-header {
-        box-sizing: border-box;
-        min-height: 729px;
-        background: url('../images/page-header-tablet-bg.png') no-repeat 50% 0;
-        background-size: cover;
+        position: static;
+        background-size: 100% 100%;
+        background-position: center;
+        background-image: url('../images/page-header-tablet-bg.png');
     }
 }
 @media screen and (min-width: $large) {
     .page-header {
         min-height: 853px;
-        background-image: url('../images/page-header-desctop-bg.png');
-    }
-}
-
-
-@media screen and (min-width: $medium) {
-    .page-header__wraper {
-        position: relative;
-        min-height: inherit;
-        margin: 0 auto;
-        width: $medium;
-    }
-}
-@media screen and (min-width: $medium) {
-    .page-header__wraper {
-        position: relative;
-        min-height: inherit;
-        margin: 0 auto;
-        width: $medium;
-    }
-}
-@media screen and (min-width: $large) {
-    .page-header__wraper {
-        position: relative;
-        min-height: inherit;
-        margin: 0 auto;
-        width: $large;
-    }
-}
-
-
-.page-header__inner {
-    position: relative;
-    box-sizing: border-box;
-    padding-bottom:1px;
-    min-height: 463px;
-    background: #1d2631 url('../images/page-header-mobile-bg.png') no-repeat 50% 0;
-    background-size: cover;
-}
-@media screen and (min-width: $small) {
-    .page-header__inner  {
-        background-image: url('../images/page-header-tablet-bg.png');
-    }
-}
-@media screen and (min-width: $medium) {
-    .page-header__inner  {
-        position: static;
-        min-height: 0;
-        background: none;
+        background-image:  url('../images/page-header-desctop-bg.png');
     }
 }
 
 
 .page-header__top {
-    padding-top: 22px;
-    padding-bottom: 22px;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(30,41,52,.3);
 }
+
+.page-header__top--menu-active {
+    background: #283645;
+}
+
+
+@media screen and (min-width: $large) {
+    .page-header__top-wraper {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 940px;
+        margin: 0 auto;
+    }
+}
+
+
+.page-header__top-inner {
+    display: flex;
+    width: 280px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 65px;
+}
+@media screen and (min-width: $medium) {
+    .page-header__top-inner {
+        width: 620px;
+        position: relative;
+        min-height: 110px;
+    }
+}
+@media screen and (min-width: $large) {
+    .page-header__top-inner {
+        width: 150px;
+        margin: 0;
+    }
+}
+
 
 .page-header__logo {
     display: block;
     width: 75px;
     height: 22px;
-    font-size: 22px;
-    line-height: 22px;
-    background: url('../images/logo-mobile.svg');
-}
-
-.page-header__promo-icon {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 314px;
-    width: 310px;
-    background: url('../images/page-header-mobile-icon-hand.png') no-repeat 50% 0;
-}
-@media screen and (min-width: $small) {
-    .page-header__promo-icon {
-        left: 115px;
-        height: 327px;
-        width: 294px;
-        background: url('../images/page-header-tablet-icon-hand.png') no-repeat 50% 0;
-        background-size: contain;
-    }
+    background: url('../images/logo-mobile.svg') no-repeat;
 }
 @media screen and (min-width: $medium) {
-    .page-header__promo-icon {
-        left: 150px;
-        height: 545px;
-        width: 491px;
-        background: url('../images/page-header-tablet-icon-hand.png') no-repeat 50% 0;
-        background-size: contain;
+    .page-header__logo {
+        width: 150px;
+        height: 40px;
+        background: url('../images/logo-tablet.svg') no-repeat;
     }
 }
 @media screen and (min-width: $large) {
-    .page-header__promo-icon {
-        left: 345px;
-        height: 645px;
+    .page-header__logo {
+        background: url('../images/logo-desctop.svg') no-repeat;
+    }
+}
+
+
+.page-header__hand-icon {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    z-index: 1;
+    width: 280px;
+    height: 314px;
+    background-image:  url('../images/page-header-mobile-icon-hand.png');
+    background-repeat: no-repeat;
+}
+@media screen and (min-width: $medium) {
+    .page-header__hand-icon {
+        left: 130px;
+        top: 188px;
+        width: 491px;
+        height: 545px;
+        background-image:  url('../images/page-header-tablet-icon-hand.png');
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (min-width: $large) {
+    .page-header__hand-icon {
+        left: 350px;
+        top: 208px;
         width: 560px;
-        background: url('../images/page-header-desctop-icon-hand.png') no-repeat 50% 0;
+        height: 645px;
+        background-image:  url('../images/page-header-desctop-icon-hand.png');
+        background-repeat: no-repeat;
     }
 }
 
 
 .page-header__slogan {
     display: none;
-    color: #fff;
-    font-weight: 300;
 }
 @media screen and (min-width: $medium) {
     .page-header__slogan {
         display: block;
+        width: 242px;
+        margin-top: 95px;
         font-size: 40px;
-        line-height: 40px;
+        font-weight: 300;
+        color: #fff;
+        line-height: 50px;
+        text-align: center;
     }
 }
 
 
 .page-header__download-section {
-    box-sizing: border-box;
-    width: 280px;
-    padding: 28px 20px 31px 19px;
-    min-height: 270px;
+    position: relative;
+    z-index: 2;
+    margin-top: 423px;
 }
 @media screen and (min-width: $medium) {
     .page-header__download-section {
-        padding: 0;
+        position: relative;
+        z-index: 2;
         width: 300px;
-        min-height: 0;
-        margin: 0;
-        background: none;
+        margin-top: 35px;
     }
 }
 @media screen and (min-width: $large) {
     .page-header__download-section {
-
+        margin-top: 55px;
     }
 }
