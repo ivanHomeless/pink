@@ -1,0 +1,26 @@
+.copyright {
+    display: inline-block;
+    text-align: right;
+}
+
+
+@media screen and (min-width: $medium) {
+    .copyright__text {
+        vertical-align: middle;
+        margin-right: 15px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+
+@media screen and (min-width: $medium) {
+    .copyright__link {
+        display: inline-block;
+        vertical-align: middle;
+        width: 27px;
+        height: 36px;
+        background-size: contain;
+        background: url('../images/social-link-htmlacademy.svg') no-repeat;
+    }
+}

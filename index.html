@@ -122,15 +122,15 @@
             </div>
         </section>
         <section class="tariff">
-            <div class="tariff__wrpa container">
-                <table class="tariff__list">
+            <div class="tariff__wrap">
+                <table class="tariff__list tariff__list--center">
                     <tr>
-                        <th></th>
+                        <th class="tariff__option--head"></th>
                         <th class="tariff_title">
                             <div class="tariff__name">База</div>
                             <div class="tariff__price">1,99 usd</div>
                         </th>
-                        <th class="tariff_title hit">
+                        <th class="tariff_title tariff_title--hit">
                             <div class="tariff__name">Стандарт</div>
                             <div class="tariff__price">3,99 usd</div>
                         </th>
@@ -141,23 +141,61 @@
                     </tr>
                     <tr>
                         <td class="tariff__option">Розовый фильтр</td>
-                        <td class="tariff__value"></td>
-                        <td class="tariff__value"></td>
-                        <td class="tariff__value"></td>
+                        <td class="tariff__value">
+                            <span class="tariff__value-name">Розовый фильтр</span>
+                            <i class="tariff__icon tariff__icon--yes"></i>
+                        </td>
+                        <td class="tariff__value">
+                            <span class="tariff__value-name">Розовый фильтр</span>
+                            <i class="tariff__icon tariff__icon--yes"></i>
+                        </td>
+                        <td class="tariff__value">
+                            <span class="tariff__value-name">Розовый фильтр</span>
+                            <i class="tariff__icon tariff__icon--yes"></i>
+                        </td>
                     </tr>
                     <tr>
                         <td class="tariff__option">Смайлики</td>
-                        <td class="tariff__value"></td>
-                        <td class="tariff__value"></td>
-                        <td class="tariff__value"></td>
+                        <td class="tariff__value">
+                            <span class="tariff__value-name">Смайлики</span>
+                            <i class="tariff__icon tariff__icon--none"></i>
+                        </td>
+                        <td class="tariff__value">
+                            <span class="tariff__value-name">Смайлики</span>
+                            <i class="tariff__icon tariff__icon--yes"></i>
+                        </td>
+                        <td class="tariff__value">
+                            <span class="tariff__value-name">Смайлики</span>
+                            <i class="tariff__icon tariff__icon--yes"></i>
+                        </td>
                     </tr>
                     <tr>
                         <td class="tariff__option">Комментарии</td>
-                        <td class="tariff__value"></td>
-                        <td class="tariff__value"></td>
-                        <td class="tariff__value"></td>
+                        <td class="tariff__value">
+                            <span class="tariff__value-name">Комментарии</span>
+                            <i class="tariff__icon tariff__icon--none"></i>
+                        </td>
+                        <td class="tariff__value">
+                            <span class="tariff__value-name">Комментарии</span>
+                            <i class="tariff__icon tariff__icon--none"></i>
+                        </td>
+                        <td class="tariff__value">
+                            <span class="tariff__value-name">Комментарии</span>
+                            <i class="tariff__icon tariff__icon--yes"></i>
+                        </td>
                     </tr>
                 </table>
+                <ul class="tariff__button-list">
+                    <li class="tariff__button-item">
+                        <button class="tariff-button button" data-slide="0"></button>
+                    </li>
+                    <li class="tariff__button-item">
+                        <button class="tariff-button tariff-button--acitve button" data-slide="1"></button>
+                    </li>
+                    <li class="tariff__button-item">
+                        <button class="tariff-button button" data-slide="2"></button>
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="contacts container">
@@ -182,25 +220,27 @@
         </section>
     </main>
     <footer class="page-footer">
-        <a class="page-footer__logo">
-            <img class="page-footer__logo-image" src="#" alt="Pink">
-        </a>
-        <div class="page-footer__social social">
-            <ul class="social__list">
-                <li class="social__item">
-                    <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
-                </li>
-                <li class="social__item">
-                    <a class="social__link social__link--facebook" href="https://twitter.com/htmlacademy">Мы в Фейсбуке</a>
-                </li>
-                <li class="social__item">
-                    <a class="social__link social__link--youtube" href="https://twitter.com/htmlacademy">Мы в Фейсбуке</a>
-                </li>
-            </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <span class="copyright__text">Разработано:</span>
-          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img crossorigin="copyright__image" src="#"></a>
+        <div class="page-header__wrap container">
+            <a href="index.html" class="page-footer__logo">
+                <img class="page-footer__logo-image" src="images/footer-logo.svg" alt="Pink">
+            </a>
+            <div class="page-footer__social social">
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--facebook" href="https://twitter.com/htmlacademy">Мы в Фейсбуке</a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--youtube" href="https://twitter.com/htmlacademy">Мы в Фейсбуке</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="page-footer__copyright copyright">
+              <span class="copyright__text">Разработано:</span>
+              <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+            </div>
         </div>
     </footer>
     <script src="js/script.js"></script>

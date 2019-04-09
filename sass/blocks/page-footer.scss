@@ -6,3 +6,41 @@
         display: block;
     }
 }
+.page-header__wrap {
+    min-height: 127px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media screen and (min-width: $medium) {
+    .page-footer__logo {
+        flex-basis: 150px;
+    }
+}
+
+
+@media screen and (min-width: $medium) {
+    .page-footer__social {
+        flex-basis: 320px;
+        padding-left: 72px;
+        padding-right: 72px;
+        box-sizing: border-box;
+    }
+}
+
+
+@media screen and (min-width: $medium) {
+    .page-footer__copyright {
+        flex-basis: 150px;
+    }
+}
+
+
+@media screen and (min-width: $medium) {
+    .page-footer__logo-image {
+        width: 150px;
+        height: 42px;
+    }
+}
