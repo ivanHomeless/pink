@@ -1,0 +1,30 @@
+.tariff {
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 46px;
+    background: #f2f2f2;
+    overflow: hidden;
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        left: -100vw;
+        top: 0;
+        border-top: 30px solid #fff;
+        border-bottom: 30px solid transparent;
+        border-left: 100vw solid #fff;
+        border-right: 100vw solid transparent;
+    }
+}
+@media screen and (min-width: $medium) {
+    .tariff :before {
+        border-top: 50px solid #fff;
+        border-bottom: 50px solid transparent;
+    }
+}
+@media screen and (min-width: $large) {
+    .tariff:before {
+        border-top: 90px solid #fff;
+        border-bottom: 90px solid transparent;
+    }
+}
