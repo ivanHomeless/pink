@@ -16,6 +16,8 @@
         border-bottom: 35px solid transparent;
     }
 }
+
+
 @media screen and (min-width: $medium) {
     .map {
         height: 373px;
@@ -28,6 +30,8 @@
         }
     }
 }
+
+
 @media screen and (min-width: $large) {
     .map {
         height: 500px;

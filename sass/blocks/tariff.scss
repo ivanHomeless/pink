@@ -16,27 +16,6 @@
         border-right: 100vw solid transparent;
     }
 }
-@media screen and (min-width: $medium) {
-    .tariff {
-        padding-top: 88px;
-        padding-bottom: 70px;
-        &:before {
-            border-top: 50px solid #fff;
-            border-bottom: 50px solid transparent;
-        }
-    }
-}
-@media screen and (min-width: $large) {
-    .tariff {
-        padding-top: 148px;
-        padding-bottom: 95px;
-        &:before {
-            border-top: 90px solid #fff;
-            border-bottom: 90px solid transparent;
-        }
-    }
-}
-
 
 .tariff__wrap {
     position: relative;
@@ -46,59 +25,12 @@
     overflow: hidden;
 
 }
-@media screen and (min-width: $medium) {
-    .tariff__wrap {
-        width: $medium;
-        min-height: 220px;
-    }
-}
-@media screen and (min-width: $large) {
-    .tariff__wrap {
-        width: $large;
-        min-height: 280px;
-    }
-}
-
 
 .tariff__list {
     width: 100%;
     border-collapse: collapse;
     min-height: 280px;
 }
-@media screen and (max-width: $medium) {
-    .tariff__list {
-        position: absolute;
-        top: 0;
-        width: 840px;
-        &--left {
-            left: 0px;
-        }
-        &--center {
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        &--right {
-            right: 0;
-        }
-    }
-    .tariff__option {
-        display: none;
-        &--head {
-            display: none;
-        }
-    }
-}
-@media screen and (min-width: $medium) {
-    .tariff__list {
-        min-height: 220px;
-    }
-}
-@media screen and (min-width: $large) {
-    .tariff__list {
-        min-height: 280px;
-    }
-}
-
 
 .tariff_title {
     position: relative;
@@ -115,17 +47,6 @@
         position: absolute;
     }
 }
-@media screen and (min-width: $medium) {
-    .tariff_title {
-        width: 155px;
-    }
-}
-@media screen and (min-width: $large) {
-    .tariff_title {
-        width: 235px;
-    }
-}
-
 
 .tariff__name {
     font-size: 18px;
@@ -133,19 +54,6 @@
     font-weight: 700;
     text-transform: uppercase;
 }
-@media screen and (min-width: $medium) {
-    .tariff__name {
-        font-size: 16px;
-        line-height: 30px;
-    }
-}
-@media screen and (min-width: $large) {
-    .tariff__name {
-        font-size: 18px;
-        line-height: 30px;
-    }
-}
-
 
 .tariff__price {
     font-size: 24px;
@@ -153,45 +61,12 @@
     font-weight: 300;
     text-transform: uppercase;
 }
-@media screen and (min-width: $medium) {
-    .tariff__price {
-        font-size: 18px;
-        line-height: 30px;
-    }
-}
-@media screen and (min-width: $large) {
-    .tariff__price {
-        font-size: 24px;
-        line-height: 30px;
-    }
-}
-
-
 
 .tariff__option {
     box-sizing: border-box;
     border: 2px solid #e5e5e5;
     background: #fff;
 }
-@media screen and (min-width: $medium) {
-    .tariff__option {
-        width: 155px;
-        padding-left: 15px;
-        font-size: 14px;
-        line-height: 30px;
-        font-weight: 400;
-    }
-}
-@media screen and (min-width: $large) {
-    .tariff__option {
-        width: 235px;
-        padding-left: 24px;
-        font-size: 18px;
-        line-height: 30px;
-        font-weight: 400;
-    }
-}
-
 
 .tariff__value {
     padding: 0 20px;
@@ -201,12 +76,6 @@
     text-align: left;
     background: #fff;
 }
-@media screen and (min-width: $medium) {
-    .tariff__value {
-        text-align: center;
-    }
-}
-
 
 .tariff__value-name {
     display: inline-block;
@@ -217,12 +86,6 @@
     text-transform: uppercase;
     margin-right: 70px;
 }
-@media screen and (min-width: $medium) {
-    .tariff__value-name {
-        display: none;
-    }
-}
-
 
 .tariff__icon {
     width: 32px;
@@ -238,13 +101,6 @@
         background: url('../images/tariff-icon-none.svg') no-repeat;
     }
 }
-@media screen and (min-width: $medium) {
-    .tariff__icon {
-        width: 28px;
-        height: 28px;
-    }
-}
-
 
 .tariff__button-list {
     margin: 0 auto;
@@ -256,12 +112,6 @@
     justify-content: space-between;
     align-items: center;
 }
-@media screen and (min-width: $medium) {
-    .tariff__button-list {
-        display: none;
-    }
-}
-
 
 .tariff-button {
     display: block;
@@ -270,10 +120,137 @@
     padding: 0;
     border-radius: 50%;
     background: #bec2c7;
+    &--acitve {
+        width: 12px;
+        height: 12px;
+        background: #fff;
+        border: 3px solid #283645;
+    }
 }
-.tariff-button--acitve {
-    width: 12px;
-    height: 12px;
-    background: #fff;
-    border: 3px solid #283645;
+
+@media screen and (max-width: $medium) {
+    .tariff__list {
+        position: absolute;
+        top: 0;
+        width: 840px;
+        &--left {
+            left: 0px;
+        }
+        &--center {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &--right {
+            right: 0;
+        }
+    }
+
+    .tariff__option {
+        display: none;
+        &--head {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: $medium) {
+    .tariff {
+        padding-top: 88px;
+        padding-bottom: 70px;
+        &:before {
+            border-top: 50px solid #fff;
+            border-bottom: 50px solid transparent;
+        }
+    }
+
+    .tariff__wrap {
+        width: $medium;
+        min-height: 220px;
+    }
+
+    .tariff__list {
+        min-height: 220px;
+    }
+
+   .tariff_title {
+        width: 155px;
+    }
+
+    .tariff__name {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .tariff__price {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .tariff__option {
+        width: 155px;
+        padding-left: 15px;
+        font-size: 14px;
+        line-height: 30px;
+        font-weight: 400;
+    }
+
+    .tariff__value {
+        text-align: center;
+    }
+
+    .tariff__value-name {
+        display: none;
+    }
+
+    .tariff__icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .tariff__button-list {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: $large) {
+    .tariff {
+        padding-top: 148px;
+        padding-bottom: 95px;
+        &:before {
+            border-top: 90px solid #fff;
+            border-bottom: 90px solid transparent;
+        }
+    }
+
+    .tariff__wrap {
+        width: $large;
+        min-height: 280px;
+    }
+
+    .tariff__list {
+        min-height: 280px;
+    }
+
+    .tariff_title {
+        width: 235px;
+    }
+
+    .tariff__name {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .tariff__price {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .tariff__option {
+        width: 235px;
+        padding-left: 24px;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 400;
+    }
 }

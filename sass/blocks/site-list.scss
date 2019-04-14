@@ -17,16 +17,17 @@
     line-height: 65px;
     background-color: #283645;
     box-shadow: 0 1px 0 0 rgba(255,255,255,0.15) inset;
+    &:hover {
+        color: #d22856;
+    }
+    &--active:hover {
+        color: #fff;
+    }
+    &:active {
+        color: #6f3650;
+    }
 }
-.site-list__link:hover {
-    color: #d22856;
-}
-.site-list__link--active:hover {
-    color: #fff;
-}
-.site-list__link:active {
-    color: #6f3650;
-}
+
 
 @media screen and (min-width: $large) {
     .site-list__link {
@@ -34,12 +35,12 @@
         background-color: transparent;
         box-shadow: none;
         font-weight: 400;
-    }
-    .site-list__link--active {
-        border-bottom: 2px #fff solid;
-    }
-    .site-list__link:active {
-        color: #fff;
-        opacity: .3;
+        &--active {
+            border-bottom: 2px #fff solid;
+        }
+        &:active {
+            color: #fff;
+            opacity: .3;
+        }
     }
 }

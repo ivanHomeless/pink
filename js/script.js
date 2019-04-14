@@ -43,7 +43,6 @@ for(var i = 0; i < sliderToggles.length; i++) {
         var slideLiist   =   document.querySelector('.slider__list');
         var translate   =   getTranslet(slideLiist);
         var newTranslate = 0;
-        console.log(translate);
         if(this.classList.contains('slider__toggle--left')) {
             newTranslate = translate * 1 - 940;
             if(translate <= 0){
@@ -71,4 +70,33 @@ function getTranslet(el) {
     var st = el.style.transform;
     var translate = st.replace(/\D+/g,"");
     return translate;
+}
+
+
+var tariffButton = document.querySelectorAll('.tariff-button');
+var tariffTable = document.querySelector('.tariff__list');
+
+for (var i = tariffButton.length - 1; i >= 0; i--) {
+    tariffButton[i].addEventListener('click', function(e) {
+        var indexButton = this.dataset.slide;
+        clearClass (tariffButton, 'tariff-button--acitve');
+        this.classList.add('tariff-button--acitve');
+        if(tariffTable.classList.contains('tariff__list--center')) {
+            tariffTable.classList.remove('tariff__list--center');
+        }
+        if(tariffTable.classList.contains('tariff__list--left')) {
+            tariffTable.classList.remove('tariff__list--left');
+        }
+        if(tariffTable.classList.contains('tariff__list--right')) {
+            tariffTable.classList.remove('tariff__list--right');
+        }
+
+        var classTable = 'tariff__list--center';
+
+        if(indexButton == 0) {classTable = 'tariff__list--left';}
+        if(indexButton == 1) {classTable = 'tariff__list--center';}
+        if(indexButton == 2) {classTable = 'tariff__list--right';}
+
+        tariffTable.classList.add(classTable);
+    });
 }

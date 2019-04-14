@@ -4,21 +4,6 @@
     margin-bottom: 28px;
     margin-top: 28px;
 }
-@media screen and (min-width: $medium) {
-   .download-section__OS-list {
-        padding-right: 46px;
-        padding-left: 46px;
-        margin-bottom: 45px;
-        margin-top: 45px;
-    }
-}
-@media screen and (min-width: $medium) {
-   .download-section__OS-list {
-        margin-bottom: 65px;
-        margin-top: 65px;
-    }
-}
-
 
 .button--download-app {
     width: 100%;
@@ -28,15 +13,14 @@
     color: #fff;
     font-size: 18px;
     line-height: 50px;
+    &:hover {
+        background: #fff;
+        color: #d22856;
+    }
+    &:active {
+        color: #f2ced5;
+    }
 }
-.button--download-app:hover {
-    background: #fff;
-    color: #d22856;
-}
-.button--download-app:active {
-    color: #f2ced5;
-}
-
 
 .download-section__text {
     margin: 0;
@@ -47,7 +31,21 @@
     font-weight: 300;
     text-align: center;
 }
+
+
 @media screen and (min-width: $medium) {
+   .download-section__OS-list {
+        padding-right: 46px;
+        padding-left: 46px;
+        margin-bottom: 45px;
+        margin-top: 45px;
+    }
+
+    .download-section__OS-list {
+        margin-bottom: 65px;
+        margin-top: 65px;
+    }
+
     .download-section__text {
         font-size: 18px;
     }

@@ -1,52 +1,47 @@
-@media screen and (min-width: $large) {
-    .main-nav {
-        width: 622px;
+.main-nav__list {
+    display: none;
+    &--menu-active {
+        position: absolute;
+        display: block;
+        width: 100%;
     }
 }
-
 
 .main-nav__button {
     width: 50px;
     height: 24px;
     background-image: url('../images/menu-burger.svg');
-}
-.main-nav__button:hover {
-    background-image: url('../images/menu-burger-hover.svg');
-}
-.main-nav__button:active {
-    opacity: .3;
-    background-image: url('../images/menu-burger-hover.svg');
-}
-.main-nav__button--close {
-    width: 24px;
-    height: 24px;
-    background-image: url('../images/menu-close.svg');
-}
-.main-nav__button--close:hover {
-    background-image: url('../images/menu-close-hover.svg');
-}
-.main-nav__button--close:active {
-    opacity: .3;
-    background-image: url('../images/menu-close-hover.svg');
-}
-@media screen and (min-width: $large) {
-    .main-nav__button {
-        display: none;
+    &:hover {
+        background-image: url('../images/menu-burger-hover.svg');
+    }
+    &:active {
+        opacity: .3;
+        background-image: url('../images/menu-burger-hover.svg');
+    }
+    &--close {
+        width: 24px;
+        height: 24px;
+        background-image: url('../images/menu-close.svg');
+    }
+    &--close:hover {
+        background-image: url('../images/menu-close-hover.svg');
+    }
+    &--close:active {
+        opacity: .3;
+        background-image: url('../images/menu-close-hover.svg');
     }
 }
 
 
-.main-nav__list {
-    display: none;
-}
 @media screen and (min-width: $large) {
+    .main-nav {
+        width: 622px;
+    }
+    .main-nav__button {
+        display: none;
+    }
     .main-nav__list {
         display: flex;
         justify-content: space-between;
     }
-}
-.main-nav__list--menu-active {
-    position: absolute;
-    display: block;
-    width: 100%;
 }
