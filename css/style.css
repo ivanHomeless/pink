@@ -350,6 +350,18 @@ img {
   height: auto;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 .container {
   width: 280px;
   margin: 0 auto;
@@ -385,8 +397,12 @@ img {
   background-position: top;
 }
 
+.page-header--inner-page {
+  min-height: auto;
+}
+
 .page-header__top {
-  background: rgba(30, 41, 52, 0.3);
+  background: rgba(10, 14, 18, 0.5);
 }
 
 .page-header__top--menu-active {
@@ -494,6 +510,9 @@ img {
     min-height: 853px;
     background-image: url("../images/page-header-desctop-bg.png");
   }
+  .page-header--inner-page {
+    min-height: auto;
+  }
   .page-header__top-wraper {
     position: relative;
     display: flex;
@@ -538,8 +557,26 @@ img {
   text-align: center;
 }
 
+.page-title--header {
+  margin: 0 auto;
+  padding: 33px 25px 50px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.page-title--inner {
+  margin: 47px auto 37px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
 .page-title__wrap {
   padding-bottom: 0;
+}
+
+.page-title__invate-form {
+  display: none;
 }
 
 @media screen and (min-width: 620px) {
@@ -548,9 +585,23 @@ img {
     font-size: 40px;
     line-height: 46px;
   }
+  .page-title--header {
+    margin: 0 auto;
+    padding: 78px 75px 75px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .page-title--inner {
+    margin: 95px auto 68px;
+    font-size: 18px;
+    line-height: 30px;
+  }
   .page-title__wrap {
     padding-top: 57px;
     padding-bottom: 43px;
+  }
+  .page-title__invate-form {
+    display: block;
   }
 }
 
@@ -560,9 +611,25 @@ img {
     font-size: 50px;
     line-height: 56px;
   }
+  .page-title--header {
+    width: auto;
+    margin: 0 auto;
+    padding-top: 71px;
+    padding-bottom: 95px;
+  }
+  .page-title--inner {
+    box-sizing: border-box;
+    margin: 95px auto 80px;
+    padding: 0 90px;
+    font-size: 18px;
+    line-height: 30px;
+  }
   .page-title__wrap {
     padding-top: 77px;
     padding-bottom: 72px;
+  }
+  .page-title__invate-form {
+    display: inline;
   }
 }
 

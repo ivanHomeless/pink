@@ -6,10 +6,13 @@
     background-repeat: no-repeat;
     background-size: 100% 463px;
     background-position: top;
+    &--inner-page {
+        min-height: auto;
+    }
 }
 
 .page-header__top {
-    background: rgba(30,41,52,.3);
+    background: rgba(10,14,18,.5);
     &--menu-active {
         background: #283645;
     }
@@ -120,6 +123,9 @@
     .page-header {
         min-height: 853px;
         background-image:  url('../images/page-header-desctop-bg.png');
+    &--inner-page {
+            min-height: auto;
+        }
     }
 
     .page-header__top-wraper {

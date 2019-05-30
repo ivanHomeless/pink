@@ -5,10 +5,26 @@
     font-size: 24px;
     line-height: 30px;
     text-align: center;
+    &--header {
+        margin: 0 auto;
+        padding: 33px 25px 50px;
+        font-size: 24px;
+        color: #ffffff;
+    }
+    &--inner {
+        margin: 47px auto 37px;
+        font-size: 14px;
+        line-height: 30px;
+        font-weight: 400;
+    }
 }
 
 .page-title__wrap {
     padding-bottom: 0;
+}
+
+.page-title__invate-form {
+    display: none;
 }
 
 
@@ -17,10 +33,26 @@
         margin: 0;
         font-size: 40px;
         line-height: 46px;
+        &--header {
+            margin: 0 auto;
+            padding: 78px 75px 75px;
+            font-size: 50px;
+            line-height: 60px;
+        }
+        &--inner {
+            margin: 95px auto 68px;
+            font-size: 18px;
+            line-height: 30px;
+        }
     }
+
     .page-title__wrap {
         padding-top: 57px;
         padding-bottom: 43px;
+    }
+
+    .page-title__invate-form {
+        display: block;
     }
 }
 
@@ -30,9 +62,27 @@
         margin: 0;
         font-size: 50px;
         line-height: 56px;
+        &--header {
+            width: auto;
+            margin: 0 auto;
+            padding-top: 71px;
+            padding-bottom: 95px;
+        }
+        &--inner {
+            box-sizing: border-box;
+            margin: 95px auto 80px;
+            padding: 0 90px;
+            font-size: 18px;
+            line-height: 30px;
+        }
     }
+
     .page-title__wrap {
         padding-top: 77px;
         padding-bottom: 72px;
+    }
+
+    .page-title__invate-form {
+        display: inline;
     }
 }
