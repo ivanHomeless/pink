@@ -1684,3 +1684,37 @@ img {
     background: url("../images/social-link-htmlacademy-hover.svg") no-repeat;
   }
 }
+
+.main-form__form-section {
+  margin-bottom: 42px;
+}
+
+.main-form__wraper {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.form-fields__label {
+  display: block;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  color: #d22856;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.form-fields__input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  padding-left: 20px;
+  border: 2px solid #e5e5e5;
+  font-size: 18px;
+  line-height: 59px;
+}
+
+.form-fields__item:not(:last-child) {
+  margin-bottom: 19px;
+}

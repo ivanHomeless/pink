@@ -32,101 +32,113 @@
         <h2 class="page-title page-title--inner container">Поделитесь своей историей и получите шанс выиграть ценный приз&nbsp;— 1000 миль на вашу бонусную карту! <span class="page-title__invate-form">Пожалуйста, заполните форму ниже:</span>
         </h2>
         <form class="main-form">
-            <section class="main-form__form-personal form-fields">
-                <div class="form-fields__item">
-                    <label class="form-fields__label" for="sername">Фамилия</label>
-                    <div class="form-fields__wrap">
-                        <input class="form-fields__input" type="text" name="sername" id="sername" placeholder="Укажите фамилию*">
-                    </div>
-                </div>
-                <div class="form-fields__item">
-                    <label class="form-fields__label" for="name">Имя</label>
-                    <div class="form-fields__wrap">
-                        <input class="form-fields__input" type="text" name="name" id="name" placeholder="Введите имя*">
-                    </div>
-                </div>
-                <div class="form-fields__item">
-                    <label class="form-fields__label" for="patronymic">Отчество</label>
-                    <div class="form-fields__wrap">
-                        <input class="form-fields__input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
-                    </div>
-                </div>
-            </section>
-            <section class="main-form__travel-achievement form-filds--box">
-                <h3 class="form-fields__title">Ваши безбашенные достижения в путешествии</h3>
-                <ul>
-                    <li class="form-fields__item">
-                        <input type="checkbox" name="travel-achievement" value="1">
-                        Сделал селфи с акулой
-                    </li>
-                    <li class="form-fields__item">
-                        <input type="checkbox" name="travel-achievement" value="1">
-                        Видел Чака Нориса
-                    </li>
-                    <li class="form-fields__item">
-                        <input type="checkbox" name="travel-achievement" value="1">
-                        Удержал башню
-                    </li>
-                    <li class="form-fields__item">
-                        <input type="checkbox" name="travel-achievement" value="1">
-                        Обгорел на пляже
-                    </li>
-                    <li class="form-fields__item">
-                        <input type="checkbox" name="travel-achievement" value="1">
-                        Накупил сувениров
-                    </li>
-                    <li class="form-fields__item">
-                        <input type="checkbox" name="travel-achievement" value="1">
-                        Разгромир отель
-                    </li>
-                </ul>
-            </section>
-            <section class="main-form__form-contacts form-filds">
-                <div class="form-fields__item">
-                    <label class="form-fields__label" for="phone">Номер телефона</label>
-                    <div class="form-fields__wrap">
-                        <input class="form-fields__input" type="text" name="phone" id="phone" placeholder="Номер, пожалуйста">
-                    </div>
-                </div>
-                <div class="form-fields__item">
-                    <label class="form-fields__label" for="phone">Адрес почты</label>
-                    <div class="form-fields__wrap">
-                        <input class="form-fields__input" type="text" name="phone" id="phone" placeholder="Введите почту*">
-                    </div>
-                </div>
-            </section>
-            <section class="main-form__app form-fields--box">
-                <div class="form-fields__legend">С каким приложение путешествовали?</div>
-                <div class="form-fields__item">
-                    <div class="form-fields__wrap">
-                        <input  class="form-fields__input" id="ios" type="radio" name="app-type" value="1">
-                    </div>
-                    <label class="form-fields__label" for="ios">Pink для iOS</label>
-                </div>
-                <div class="form-fields__item">
-                    <div class="form-fields__wrap">
-                        <input  class="form-fields__input" id="android" type="radio" name="app-type" value="2">
-                    </div>
-                    <label class="form-fields__label" for="ios">Pink для Android</label>
-                </div>
-                <div class="form-fields__item">
-                    <div class="form-fields__wrap">
-                        <input  class="form-fields__input" id="windows" type="radio" name="app-type" value="3">
-                    </div>
-                    <label class="form-fields__label" for="ios">Pink для Windows</label>
-                </div>
-            </section>
-            <section class="main-form__travel-emotion form-filds">
-                <div class="form-fields__box">
-                    <h3 class="form-fields__title">Опишите свои эмоции</h3>
+            <section class="main-form__form-section main-form__form-personal">
+                <div class="main-form__wraper form-fields">
                     <div class="form-fields__item">
-                        <textarea class="form-fields__input" id="emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                        <label class="form-fields__label" for="sername">Фамилия</label>
+                        <div class="form-fields__wrap">
+                            <input class="form-fields__input" type="text" name="sername" id="sername" placeholder="Укажите фамилию*">
+                        </div>
+                    </div>
+                    <div class="form-fields__item">
+                        <label class="form-fields__label" for="name">Имя</label>
+                        <div class="form-fields__wrap">
+                            <input class="form-fields__input" type="text" name="name" id="name" placeholder="Введите имя*">
+                        </div>
+                    </div>
+                    <div class="form-fields__item">
+                        <label class="form-fields__label" for="patronymic">Отчество</label>
+                        <div class="form-fields__wrap">
+                            <input class="form-fields__input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+                        </div>
                     </div>
                 </div>
             </section>
-            <section class="main-form__controls">
-                <button class="button" type="submit" name="submit" id="submit"> Отправить форму </button>
-                <div class="main-form__legend"> * — обязательные для заполнения поля</div>
+            <section class="main-form__form-section main-form__travel-achievement form-filds--box">
+                <div class="main-form__wraper">
+                    <h3 class="form-fields__title">Ваши безбашенные достижения в путешествии</h3>
+                    <ul>
+                        <li class="form-fields__item">
+                            <input type="checkbox" name="travel-achievement" value="1">
+                            Сделал селфи с акулой
+                        </li>
+                        <li class="form-fields__item">
+                            <input type="checkbox" name="travel-achievement" value="1">
+                            Видел Чака Нориса
+                        </li>
+                        <li class="form-fields__item">
+                            <input type="checkbox" name="travel-achievement" value="1">
+                            Удержал башню
+                        </li>
+                        <li class="form-fields__item">
+                            <input type="checkbox" name="travel-achievement" value="1">
+                            Обгорел на пляже
+                        </li>
+                        <li class="form-fields__item">
+                            <input type="checkbox" name="travel-achievement" value="1">
+                            Накупил сувениров
+                        </li>
+                        <li class="form-fields__item">
+                            <input type="checkbox" name="travel-achievement" value="1">
+                            Разгромир отель
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="main-form__form-section main-form__form-contacts form-filds">
+                <div class="main-form__wraper">
+                    <div class="form-fields__item">
+                        <label class="form-fields__label" for="phone">Номер телефона</label>
+                        <div class="form-fields__wrap">
+                            <input class="form-fields__input" type="text" name="phone" id="phone" placeholder="Номер, пожалуйста">
+                        </div>
+                    </div>
+                    <div class="form-fields__item">
+                        <label class="form-fields__label" for="phone">Адрес почты</label>
+                        <div class="form-fields__wrap">
+                            <input class="form-fields__input" type="text" name="phone" id="phone" placeholder="Введите почту*">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main-form__form-section main-form__app form-fields--box">
+                <div class="main-form__wraper">
+                    <div class="form-fields__legend">С каким приложение путешествовали?</div>
+                    <div class="form-fields__item">
+                        <div class="form-fields__wrap">
+                            <input  class="form-fields__input" id="ios" type="radio" name="app-type" value="1">
+                        </div>
+                        <label class="form-fields__label" for="ios">Pink для iOS</label>
+                    </div>
+                    <div class="form-fields__item">
+                        <div class="form-fields__wrap">
+                            <input  class="form-fields__input" id="android" type="radio" name="app-type" value="2">
+                        </div>
+                        <label class="form-fields__label" for="ios">Pink для Android</label>
+                    </div>
+                    <div class="form-fields__item">
+                        <div class="form-fields__wrap">
+                            <input  class="form-fields__input" id="windows" type="radio" name="app-type" value="3">
+                        </div>
+                        <label class="form-fields__label" for="ios">Pink для Windows</label>
+                    </div>
+                </div>
+            </section>
+            <section class="main-form__form-section main-form__travel-emotion form-filds">
+                <div class="main-form__wraper">
+                    <div class="form-fields__box">
+                        <h3 class="form-fields__title">Опишите свои эмоции</h3>
+                        <div class="form-fields__item">
+                            <textarea class="form-fields__input" id="emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main-form__form-section main-form__controls">
+                <div class="main-form__wraper">
+                    <button class="button" type="submit" name="submit" id="submit"> Отправить форму </button>
+                    <div class="main-form__legend"> * — обязательные для заполнения поля</div>
+                </div>
             </section>
             <div class="main-form__popup form-popup form-popup--succsess">
                 <h3 class="form-popup__title">Ваша заявка отправлена</h3>
