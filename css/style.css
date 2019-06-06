@@ -1686,7 +1686,18 @@ img {
 }
 
 .main-form__form-section {
-  margin-bottom: 42px;
+  margin-top: 34px;
+}
+
+.main-form__form-section:first-child {
+  margin-top: 0;
+}
+
+.main-form__form-section--box {
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 42px;
+  background: #f2f2f2;
 }
 
 .main-form__wraper {
@@ -1698,11 +1709,19 @@ img {
 .form-fields__label {
   display: block;
   padding-left: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 7px;
   color: #d22856;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 30px;
   text-transform: uppercase;
+}
+
+.form-fields__list .form-fields__label {
+  display: inline-block;
+  color: #283645;
+  text-transform: none;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .form-fields__input {
@@ -1717,4 +1736,29 @@ img {
 
 .form-fields__item:not(:last-child) {
   margin-bottom: 19px;
+}
+
+.form-fields__title {
+  width: 250px;
+  margin: 0 auto;
+  font-weight: 400;
+  color: #d22856;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main-form__travel-emotion .form-fields__title {
+  line-height: 30px;
+}
+
+.form-fields__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.main-form__popup {
+  display: none;
 }

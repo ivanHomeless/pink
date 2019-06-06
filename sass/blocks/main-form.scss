@@ -1,5 +1,16 @@
 .main-form__form-section {
-    margin-bottom: 42px;
+    margin-top: 34px;
+}
+
+.main-form__form-section:first-child{
+    margin-top: 0;
+}
+
+.main-form__form-section--box {
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 42px;
+    background: #f2f2f2;
 }
 
 .main-form__wraper {
