@@ -12,6 +12,8 @@
     display: inline-block;
     margin: 0;
     padding: 0;
+    margin-left: 26px;
+    transform: translateY(25%);
     color: #283645;
     text-transform: none;
     font-size: 18px;
@@ -26,6 +28,12 @@
     border: 2px solid #e5e5e5;
     font-size: 18px;
     line-height: 59px;
+}
+
+.form-fields__textarea {
+    min-height: 200px;
+    padding-top: 17px;
+    line-height: 30px;
 }
 
 .form-fields__item:not(:last-child) {
@@ -51,6 +59,7 @@
 
 .main-form__travel-emotion .form-fields__title {
     line-height: 30px;
+    margin-bottom: 10px;
 }
 
 .form-fields__list {
@@ -63,4 +72,48 @@
 .form-fields__input-radio,
 .form-fields__input-checkbox {
     display: none;
+}
+
+.form-fields__custom-checkbox {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    height: 35px;
+    width: 35px;
+    border: 2px solid #e5e5e5;
+    background: #fff;
+}
+
+.form-fields__input-checkbox:checked + .form-fields__custom-checkbox:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 22px;
+    height: 16px;
+    transform: translate(-50%, -50%);
+    background: url("../images/form-fields-checkox-tick.svg") no-repeat;
+}
+
+.form-fields__custom-radio {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 2px solid #e5e5e5;
+    background: #fff;
+}
+
+.form-fields__input-radio:checked + .form-fields__custom-radio:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background: #d22856;
 }
