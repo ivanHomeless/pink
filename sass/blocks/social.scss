@@ -1,52 +1,57 @@
+.social__list {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social__item {
+    margin-right: 12px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.social__link {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #e9ebec;
+    border-radius: 50%;
+    font-size: 0;
+    line-height: 0;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        width: 20px;
+        height: 20px;
+        transform: translate(50%, -50%);
+    }
+    &--twitter:before {
+        background: url('../images/social-link-twiter.svg') no-repeat;
+    }
+    &--facebook:before {
+        width: 10px;
+        background: url('../images/social-link-facebook.svg') no-repeat;
+    }
+    &--youtube:before {
+        background: url('../images/social-link-youtube.svg') no-repeat;
+    }
+    &:hover {
+        border: 2px solid #283645;
+    }
+    &:active {
+        opacity: .3;
+    }
+}
+
+
 @media screen and (min-width: $medium) {
     .social__list {
-        display: flex;
         justify-content: space-between;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-
-    .social__item {
-        margin-right: 12px;
-        &:last-child {
-            margin-right: 0;
-        }
-    }
-
-    .social__link {
-        position: relative;
-        display: block;
-        width: 50px;
-        height: 50px;
-        border: 2px solid #e9ebec;
-        border-radius: 50%;
-        font-size: 0;
-        line-height: 0;
-        &:before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            right: 50%;
-            width: 20px;
-            height: 20px;
-            transform: translate(50%, -50%);
-        }
-        &--twitter:before {
-            background: url('../images/social-link-twiter.svg') no-repeat;
-        }
-        &--facebook:before {
-            width: 10px;
-            background: url('../images/social-link-facebook.svg') no-repeat;
-        }
-        &--youtube:before {
-            background: url('../images/social-link-youtube.svg') no-repeat;
-        }
-        &:hover {
-            border: 2px solid #283645;
-        }
-        &:active {
-            opacity: .3;
-        }
     }
 }

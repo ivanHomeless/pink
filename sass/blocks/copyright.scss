@@ -1,29 +1,30 @@
-.copyright {
+.copyright__text {
+    vertical-align: middle;
+    margin-right: 15px;
+    font-size: 14px;
+    line-height: 18px;
+}
+.copyright__link {
     display: inline-block;
-    text-align: right;
+    vertical-align: middle;
+    width: 27px;
+    height: 36px;
+    background-size: contain;
+    background: url('../images/social-link-htmlacademy.svg') no-repeat;
+    &:hover {
+        background: url('../images/social-link-htmlacademy-hover.svg') no-repeat;
+    }
+    &:active {
+        opacity: .3;
+        background: url('../images/social-link-htmlacademy-hover.svg') no-repeat;
+    }
 }
 
 
 @media screen and (min-width: $medium) {
-    .copyright__text {
-        vertical-align: middle;
-        margin-right: 15px;
-        font-size: 14px;
-        line-height: 18px;
-    }
-    .copyright__link {
+    .copyright {
         display: inline-block;
-        vertical-align: middle;
-        width: 27px;
-        height: 36px;
-        background-size: contain;
-        background: url('../images/social-link-htmlacademy.svg') no-repeat;
-        &:hover {
-            background: url('../images/social-link-htmlacademy-hover.svg') no-repeat;
-        }
-        &:active {
-            opacity: .3;
-            background: url('../images/social-link-htmlacademy-hover.svg') no-repeat;
-        }
+        text-align: right;
     }
 }
+
