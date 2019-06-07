@@ -10,6 +10,8 @@
 
 .form-fields__list .form-fields__label {
     display: inline-block;
+    margin: 0;
+    padding: 0;
     color: #283645;
     text-transform: none;
     font-size: 18px;
@@ -30,6 +32,12 @@
     margin-bottom: 19px;
 }
 
+.form-fields__list  .form-fields__item:not(:last-child) {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 42px;
+}
+
 .form-fields__title {
     width: 250px;
     margin: 0 auto;
@@ -48,5 +56,11 @@
 .form-fields__list {
     padding: 0;
     margin: 0;
+    margin-top: 38px;
     list-style: none;
+}
+
+.form-fields__input-radio,
+.form-fields__input-checkbox {
+    display: none;
 }
