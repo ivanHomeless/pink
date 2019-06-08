@@ -100,3 +100,34 @@ for (var i = tariffButton.length - 1; i >= 0; i--) {
         tariffTable.classList.add(classTable);
     });
 }
+
+
+let submitBtn = document.querySelector(".main-form__button--submit");
+let closeBtn = document.querySelectorAll(".main-form__button--close");
+
+for (i = 0; i < closeBtn.length; i++) {
+    closeBtn[i].addEventListener("click", function (e) {
+        e.preventDefault();
+        let sowPopup = document.querySelector(".form-popup--show");
+        if(sowPopup) {
+            sowPopup.classList.remove("form-popup--show");
+        }
+    });
+}
+
+submitBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    let random = Math.floor( Math.random() * 10);
+    let classPopup = ".form-popup--success";
+
+    if(random > 7) {
+        classPopup = ".form-popup--failure";
+    }
+
+    let popup = document.querySelector(classPopup);
+
+    if(!popup.classList.contains("form-popup--show")) {
+        popup.classList.add("form-popup--show");
+    }
+
+});

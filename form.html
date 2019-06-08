@@ -33,7 +33,7 @@
         </h2>
         <form class="main-form">
             <section class="main-form__form-section main-form__form-personal">
-                <div class="main-form__wraper form-fields">
+                <fieldset class="main-form__wraper form-fields form-fields--nogroup">
                     <div class="form-fields__item">
                         <label class="form-fields__label" for="sername">Фамилия</label>
                         <div class="form-fields__wrap">
@@ -52,11 +52,11 @@
                             <input class="form-fields__input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
                         </div>
                     </div>
-                </div>
+                </fieldset>
             </section>
             <section class="main-form__form-section main-form__travel-achievement main-form__form-section--box">
-                <div class="main-form__wraper form-fields">
-                    <h3 class="form-fields__title">Ваши безбашенные достижения в путешествии</h3>
+                <fieldset class="main-form__wraper form-fields">
+                    <legend class="form-fields__title">Ваши безбашенные достижения в путешествии</legend>
                     <ul class="form-fields__list">
                         <li class="form-fields__item">
                             <div class="form-fields__wrap">
@@ -101,27 +101,28 @@
                             </div>
                         </li>
                     </ul>
-                </div>
+                </fieldset>
             </section>
             <section class="main-form__form-section main-form__form-contacts">
-                <div class="main-form__wraper form-filds">
+                <fieldset class="main-form__wraper form-fields form-fields--contacts">
+                    <legend class="form-fields__title">Контактная информация</legend>
                     <div class="form-fields__item">
                         <label class="form-fields__label" for="phone">Номер телефона</label>
-                        <div class="form-fields__wrap">
+                        <div class="form-fields__wrap form-fields__icon form-fields__icon--phone">
                             <input class="form-fields__input" type="text" name="phone" id="phone" placeholder="Номер, пожалуйста">
                         </div>
                     </div>
                     <div class="form-fields__item">
-                        <label class="form-fields__label" for="phone">Адрес почты</label>
-                        <div class="form-fields__wrap">
-                            <input class="form-fields__input" type="text" name="phone" id="phone" placeholder="Введите почту*">
+                        <label class="form-fields__label" for="email">Адрес почты</label>
+                        <div class="form-fields__wrap form-fields__icon form-fields__icon--email">
+                            <input class="form-fields__input" type="text" name="email" id="email" placeholder="Введите почту*">
                         </div>
                     </div>
-                </div>
+                </fieldset>
             </section>
             <section class="main-form__form-section main-form__app main-form__form-section--box">
-                <div class="main-form__wraper form-filds">
-                    <h3 class="form-fields__title">С каким приложение путешествовали?</h3>
+                <fieldset class="main-form__wraper form-fields">
+                    <legend class="form-fields__title">С каким приложение путешествовали?</legend>
                     <ul class="form-fields__list">
                         <li class="form-fields__item">
                             <div class="form-fields__wrap">
@@ -145,36 +146,40 @@
                             </div>
                         </li>
                     </ul>
-                </div>
+                </fieldset>
             </section>
             <section class="main-form__form-section main-form__travel-emotion">
-                <div class="main-form__wraper form-filds">
+                <fieldset class="main-form__wraper form-fields">
+                    <legend class="form-fields__title">Опишите свои эмоции</legend>
                     <div class="form-fields__box">
-                        <h3 class="form-fields__title">Опишите свои эмоции</h3>
                         <div class="form-fields__item">
                             <textarea class="form-fields__input form-fields__textarea" id="emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
                         </div>
                     </div>
-                </div>
+                </fieldset>
             </section>
             <section class="main-form__form-section main-form__controls">
                 <div class="main-form__wraper">
-                    <button class="main-form__button" type="submit" name="submit" id="submit"> Отправить форму </button>
+                    <button class="main-form__button main-form__button--submit" type="submit" name="submit" id="submit"> Отправить форму </button>
                     <div class="main-form__legend"> <span class="main-form__note">*</span> — обязательные <span class="main-form__legend--mobile">для заполнения</span>поля</div>
                 </div>
             </section>
             <div class="main-form__popup form-popup form-popup--success">
-                <h3 class="form-popup__title">Ваша заявка отправлена</h3>
-                <p class="form-popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-                <div class="form-popup__control">
-                    <button class="main-form__button">Закрыть окно</button>
+                <div class="form-popup__wpraper">
+                    <h3 class="form-popup__title">Ваша заявка отправлена</h3>
+                    <p class="form-popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+                    <div class="form-popup__control">
+                        <button class="main-form__button main-form__button--close">Закрыть окно</button>
+                    </div>
                 </div>
             </div>
             <div class="main-form__popup form-popup form-popup--failure">
-                <h3 class="form-popup__title">Что-то пошло не так</h3>
-                <p class="form-popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
-                <div class="form-popup__control">
-                    <button class="main-form__button">Ок</button>
+                <div class="form-popup__wpraper">
+                    <h3 class="form-popup__title">Что-то пошло не так</h3>
+                    <p class="form-popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
+                    <div class="form-popup__control">
+                        <button class="main-form__button main-form__button--close">Ок</button>
+                    </div>
                 </div>
             </div>
         </form>

@@ -1615,8 +1615,12 @@ img {
     justify-content: space-between;
     flex-wrap: nowrap;
   }
+  .page-footer__logo {
+    margin-bottom: 0;
+  }
   .page-footer__social {
     width: 320px;
+    margin-bottom: 0;
     padding-left: 72px;
     padding-right: 72px;
     box-sizing: border-box;
@@ -1743,8 +1747,7 @@ img {
 .main-form__popup {
   position: fixed;
   width: 100%;
-  height: 380px;
-  z-index: 1;
+  z-index: 10;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1778,6 +1781,49 @@ img {
 
 .main-form__note {
   color: #d22856;
+}
+
+@media screen and (min-width: 620px) {
+  .main-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main-form__form-section {
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 54px;
+    background: #fff;
+  }
+  .main-form__form-personal {
+    order: 0;
+  }
+  .main-form__travel-achievement {
+    order: 3;
+  }
+  .main-form__form-contacts {
+    order: 2;
+  }
+  .main-form__app {
+    order: 1;
+  }
+  .main-form__travel-emotion {
+    margin-bottom: 67px;
+    order: 4;
+  }
+  .main-form__controls {
+    margin-bottom: 0;
+    order: 5;
+  }
+  .main-form__wraper {
+    box-sizing: border-box;
+    width: 620px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.form-fields {
+  border: none;
 }
 
 .form-fields__label {
@@ -1844,6 +1890,10 @@ img {
   margin-bottom: 10px;
 }
 
+.form-fields--contacts .form-fields__title {
+  display: none;
+}
+
 .form-fields__list {
   padding: 0;
   margin: 0;
@@ -1900,6 +1950,102 @@ img {
   background: #d22856;
 }
 
+@media screen and (min-width: 620px) {
+  .form-fields {
+    padding-left: 52px;
+    padding-right: 48px;
+    padding-bottom: 48px;
+    border: 2px solid #e5e5e5;
+  }
+  .form-fields--nogroup {
+    padding: 0;
+    border: none;
+  }
+  .form-fields__item {
+    display: flex;
+  }
+  .form-fields__item:not(:last-child) {
+    margin-bottom: 52px;
+  }
+  .form-fields__wrap {
+    flex-grow: 1;
+  }
+  .form-fields__icon {
+    position: relative;
+  }
+  .form-fields__icon:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    height: 62px;
+    width: 62px;
+    background: #e5e5e5;
+  }
+  .form-fields__icon--phone:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 22px;
+    z-index: 2;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: url("../images/form-fields-icon-phone.png") no-repeat;
+  }
+  .form-fields__icon--email:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 23px;
+    z-index: 2;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 13px;
+    background: url("../images/form-fields-icon-email.png") no-repeat;
+  }
+  .form-fields__label {
+    padding: 0;
+    margin: 0;
+  }
+  .form-fields--nogroup .form-fields__label {
+    margin-right: 20px;
+    padding-top: 20px;
+    align-items: center;
+  }
+  .form-fields--contacts {
+    padding-bottom: 25px;
+  }
+  .form-fields--contacts .form-fields__item {
+    flex-wrap: wrap;
+  }
+  .form-fields--contacts .form-fields__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .form-fields--contacts .form-fields__title {
+    display: table;
+    margin-bottom: 32px;
+  }
+  .form-fields--contacts .form-fields__label {
+    order: 1;
+    margin-top: 12px;
+    padding-left: 20px;
+  }
+  .form-fields--contacts .form-fields__wrap {
+    width: 100%;
+    order: 0;
+  }
+  .form-fields__title {
+    width: auto;
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+  .main-form__travel-emotion .form-fields__title {
+    margin-bottom: 32px;
+  }
+}
+
 .form-popup {
   display: none;
   box-shadow: 0px 7px 15px 0px rgba(0, 1, 1, 0.15);
@@ -1932,4 +2078,29 @@ img {
   padding-top: 48px;
   padding-bottom: 52px;
   background: #f2f2f2;
+}
+
+.form-popup--failure .form-popup__control {
+  background: #fff;
+}
+
+@media screen and (min-width: 620px) {
+  .form-popup {
+    width: 460px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .form-popup__title {
+    width: 260px;
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .form-popup__text {
+    width: 320px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }

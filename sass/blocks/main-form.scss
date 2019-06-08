@@ -22,8 +22,7 @@
 .main-form__popup {
     position: fixed;
     width: 100%;
-    height: 380px;
-    z-index: 1;
+    z-index: 10;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -56,4 +55,52 @@
 
 .main-form__note {
     color: #d22856;
+}
+
+
+@media screen and (min-width: $medium) {
+    .main-form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main-form__form-section {
+        margin: 0 auto;
+        padding: 0;
+        margin-bottom: 54px;
+        background: #fff;
+    }
+
+    .main-form__form-personal {
+        order: 0;
+    }
+
+    .main-form__travel-achievement {
+        order: 3;
+    }
+
+    .main-form__form-contacts {
+        order: 2;
+    }
+
+    .main-form__app {
+        order: 1;
+    }
+
+    .main-form__travel-emotion {
+        margin-bottom: 67px;
+        order: 4;
+    }
+
+    .main-form__controls {
+        margin-bottom: 0;
+        order: 5;
+    }
+
+    .main-form__wraper {
+        box-sizing: border-box;
+        width: 620px;
+        margin: 0 auto;
+        padding: 0;
+    }
 }

@@ -30,3 +30,31 @@
     padding-bottom: 52px;
     background: #f2f2f2;
 }
+
+.form-popup--failure .form-popup__control {
+    background: #fff;
+}
+
+
+@media screen and (min-width: $medium) {
+    .form-popup {
+        width: 460px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .form-popup__title {
+        width: 260px;
+        margin: 0 auto;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .form-popup__text {
+        width: 320px;
+        margin: 0 auto;
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
