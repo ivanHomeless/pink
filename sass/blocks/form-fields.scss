@@ -32,6 +32,16 @@
     border: 2px solid #e5e5e5;
     font-size: 18px;
     line-height: 59px;
+    outline: none;
+}
+
+.form-fields__input:hover {
+    border-color: #283645;
+}
+
+.form-fields__input:active,
+.form-fields__input:focus {
+    border-color: #d22856;
 }
 
 .form-fields__textarea {
@@ -92,6 +102,13 @@
     background: #fff;
 }
 
+.form-fields__custom-checkbox:hover {
+    border-color: #283645;
+}
+.form-fields__input-checkbox + .form-fields__custom-checkbox:active {
+    border-color: #d22856;
+}
+
 .form-fields__input-checkbox:checked + .form-fields__custom-checkbox:before {
     content: "";
     position: absolute;
@@ -112,6 +129,13 @@
     border-radius: 50%;
     border: 2px solid #e5e5e5;
     background: #fff;
+}
+
+.form-fields__custom-radio:hover {
+    border-color: #283645;
+}
+.form-fields__input-radio + .form-fields__custom-radio:active {
+    border-color: #d22856;
 }
 
 .form-fields__input-radio:checked + .form-fields__custom-radio:before {
@@ -158,11 +182,11 @@
     .form-fields__icon:after {
         content: "";
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 2px;
+        right: 2px;
         z-index: 1;
-        height: 62px;
-        width: 62px;
+        height: 58px;
+        width: 58px;
         background: #e5e5e5;
     }
 
@@ -209,8 +233,12 @@
         flex-wrap: wrap;
     }
 
-    .form-fields--contacts .form-fields__item:not(:last-child) {
+    .form-fields--contacts .form-fields__item {
         margin-bottom: 30px;
+    }
+
+    .form-fields--contacts .form-fields__item:last-child {
+        margin-bottom: 0;
     }
 
     .form-fields--contacts .form-fields__title {
@@ -237,5 +265,48 @@
 
     .main-form__travel-emotion .form-fields__title {
         margin-bottom: 32px;
+    }
+}
+
+
+@media screen and (min-width: $large) {
+    .form-fields--contacts {
+        padding: 0 60px 15px 60px;
+    }
+
+    .form-fields__contact-wraper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-form__form-contacts .form-fields__item {
+        width: 376px;
+        margin-bottom: 0;
+    }
+
+    .form-fields__textarea {
+        min-height: 130px;
+    }
+
+    .form-fields__achievement-wraper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .form-fields__achievement-wraper .form-fields__item {
+        width: 260px;
+    }
+
+    .form-fields__achievement-wraper .form-fields__label {
+        margin-left: 18px;
+    }
+
+    .form-fields--achievement {
+        padding: 0 60px 12px 60px;
+    }
+
+    .form-fields--app {
+        padding-left: 72px;
     }
 }

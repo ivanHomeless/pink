@@ -55,9 +55,9 @@
                 </fieldset>
             </section>
             <section class="main-form__form-section main-form__travel-achievement main-form__form-section--box">
-                <fieldset class="main-form__wraper form-fields">
+                <fieldset class="main-form__wraper form-fields form-fields--achievement">
                     <legend class="form-fields__title">Ваши безбашенные достижения в путешествии</legend>
-                    <ul class="form-fields__list">
+                    <ul class="form-fields__list form-fields__achievement-wraper">
                         <li class="form-fields__item">
                             <div class="form-fields__wrap">
                                 <input class="form-fields__input-checkbox" id="selfy" type="checkbox" name="travel-achievement" value="1">
@@ -106,22 +106,24 @@
             <section class="main-form__form-section main-form__form-contacts">
                 <fieldset class="main-form__wraper form-fields form-fields--contacts">
                     <legend class="form-fields__title">Контактная информация</legend>
-                    <div class="form-fields__item">
-                        <label class="form-fields__label" for="phone">Номер телефона</label>
-                        <div class="form-fields__wrap form-fields__icon form-fields__icon--phone">
-                            <input class="form-fields__input" type="text" name="phone" id="phone" placeholder="Номер, пожалуйста">
+                    <div class="form-fields__contact-wraper">
+                        <div class="form-fields__item">
+                            <label class="form-fields__label" for="phone">Номер телефона</label>
+                            <div class="form-fields__wrap form-fields__icon form-fields__icon--phone">
+                                <input class="form-fields__input" type="text" name="phone" id="phone" placeholder="Номер, пожалуйста">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-fields__item">
-                        <label class="form-fields__label" for="email">Адрес почты</label>
-                        <div class="form-fields__wrap form-fields__icon form-fields__icon--email">
-                            <input class="form-fields__input" type="text" name="email" id="email" placeholder="Введите почту*">
+                        <div class="form-fields__item">
+                            <label class="form-fields__label" for="email">Адрес почты</label>
+                            <div class="form-fields__wrap form-fields__icon form-fields__icon--email">
+                                <input class="form-fields__input" type="text" name="email" id="email" placeholder="Введите почту*">
+                            </div>
                         </div>
                     </div>
                 </fieldset>
             </section>
             <section class="main-form__form-section main-form__app main-form__form-section--box">
-                <fieldset class="main-form__wraper form-fields">
+                <fieldset class="main-form__wraper form-fields form-fields--app">
                     <legend class="form-fields__title">С каким приложение путешествовали?</legend>
                     <ul class="form-fields__list">
                         <li class="form-fields__item">
@@ -159,9 +161,9 @@
                 </fieldset>
             </section>
             <section class="main-form__form-section main-form__controls">
-                <div class="main-form__wraper">
+                <div class="main-form__wraper main-form__control-wraper">
                     <button class="main-form__button main-form__button--submit" type="submit" name="submit" id="submit"> Отправить форму </button>
-                    <div class="main-form__legend"> <span class="main-form__note">*</span> — обязательные <span class="main-form__legend--mobile">для заполнения</span>поля</div>
+                    <div class="main-form__legend"> <span class="main-form__note">*</span> — обязательные <span class="main-form__legend--mobile">для заполнения </span>поля</div>
                 </div>
             </section>
             <div class="main-form__popup form-popup form-popup--success">
@@ -169,7 +171,7 @@
                     <h3 class="form-popup__title">Ваша заявка отправлена</h3>
                     <p class="form-popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
                     <div class="form-popup__control">
-                        <button class="main-form__button main-form__button--close">Закрыть окно</button>
+                        <button class="main-form__button form-popup__button main-form__button--close">Закрыть окно</button>
                     </div>
                 </div>
             </div>
@@ -178,7 +180,7 @@
                     <h3 class="form-popup__title">Что-то пошло не так</h3>
                     <p class="form-popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
                     <div class="form-popup__control">
-                        <button class="main-form__button main-form__button--close">Ок</button>
+                        <button class="main-form__button form-popup__button main-form__button--close">Ок</button>
                     </div>
                 </div>
             </div>

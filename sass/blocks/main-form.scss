@@ -104,3 +104,60 @@
         padding: 0;
     }
 }
+
+@media screen and (min-width: $large) {
+    .main-form {
+        width: 960px;
+        box-sizing: border-box;
+        padding: 0 10px;
+        margin: 0 auto;
+        padding-bottom: 42px;
+        justify-content: space-between;
+    }
+
+    .main-form__form-section {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .main-form__form-personal {
+        width: 434px;
+        padding-top: 32px;
+    }
+
+    .main-form__app {
+        width: 434px;
+    }
+
+    .main-form__wraper {
+        width: auto;
+    }
+
+    .main-form__form-contacts {
+        width: 940px;
+    }
+
+    .main-form__control-wraper {
+        display: flex;
+        justify-content: space-between;
+        width: 940px;
+    }
+
+    .main-form__legend--mobile {
+        display: inline;
+    }
+
+    .main-form__legend {
+        width: 320px;
+        margin: 0;
+        align-self: center;
+    }
+
+    .main-form__button--submit {
+        margin: 0;
+    }
+
+    .main-form__travel-emotion {
+        width: 940px;
+    }
+}
