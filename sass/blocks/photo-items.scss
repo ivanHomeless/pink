@@ -1,0 +1,55 @@
+.photo-item {
+    background: #f2f2f2;
+}
+
+.photo-item__image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.photo-item__text-wrapper {
+    padding-top: 15px;
+    padding-bottom: 25px;
+    padding-left: 18px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.photo-item__autor-name {
+    margin: 0;
+    font-weight: 700;
+}
+
+.photo-item__time {
+    margin-left: 5px;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.photo-item__text {
+    margin: 0;
+    margin-bottom: 18px;
+}
+
+.photo-item__likes {
+    display: flex;
+    margin: 0;
+    color: #d22856;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.photo-item__button--like {
+    align-self: center;
+    width: 13px;
+    height: 12px;
+    margin-right: 19px;
+    border: none;
+    outline: none;
+    background: url("../images/photo-item-button--like.png") no-repeat;
+}

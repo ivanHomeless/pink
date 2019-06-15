@@ -2,6 +2,8 @@ var mainNavButton   =   document.querySelector('.main-nav__button');
 var pageHeaderTop   =   document.querySelector('.page-header__top');
 var mainNavList     =   document.querySelector('.main-nav__list');
 
+
+
 mainNavButton.addEventListener("click", function (e) {
 
     if(mainNavButton.classList.contains('main-nav__button--close')) {
@@ -26,6 +28,8 @@ window.addEventListener('resize', function(){
 var sliderToggles   =   document.querySelectorAll('.slider__toggle');
 var sliderButtons   =   document.querySelectorAll('.slide-button');
 var sliderItems     =   document.querySelectorAll('.slider__item');
+
+
 
 for(var i = 0; i < sliderButtons.length; i++) {
     sliderButtons[i].addEventListener('click', function(e) {

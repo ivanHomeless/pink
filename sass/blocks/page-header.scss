@@ -65,7 +65,7 @@
 @media screen and (min-width: $medium) {
     .page-header {
         position: static;
-        background-size: 100% 100%;
+        background-size: cover;
         background-position: center;
         background-image: url('../images/page-header-tablet-bg.png');
     }
@@ -123,6 +123,7 @@
     .page-header {
         min-height: 853px;
         background-image:  url('../images/page-header-desctop-bg.png');
+        background-size: cover;
     &--inner-page {
             min-height: auto;
         }
