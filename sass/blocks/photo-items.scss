@@ -2,6 +2,26 @@
     background: #f2f2f2;
 }
 
+.photo-item__image-wraper {
+    &--best-of-day {
+        position: relative;
+        &:after {
+            content: 'панорама дня';
+            position: absolute;
+            top: 0;
+            right: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 36px;
+            text-transform: uppercase;
+            background: #d22856;
+        }
+    }
+}
+
 .photo-item__image {
     width: 100%;
     max-width: 100%;
@@ -9,8 +29,9 @@
 }
 
 .photo-item__text-wrapper {
+    box-sizing: border-box;
     padding-top: 15px;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     padding-left: 18px;
     font-size: 14px;
     line-height: 24px;
@@ -25,13 +46,13 @@
     margin-left: 5px;
     font-size: 12px;
     line-height: 24px;
-    font-weight: 400;
+    font-weight: 300;
     text-transform: uppercase;
 }
 
 .photo-item__text {
     margin: 0;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
 }
 
 .photo-item__likes {
@@ -52,4 +73,55 @@
     border: none;
     outline: none;
     background: url("../images/photo-item-button--like.png") no-repeat;
+}
+
+.photo-item__likes-cnt {
+    margin-left: 4px;
+}
+
+
+@media screen and (min-width: $medium) {
+    .photo-item {
+        position: relative;
+        padding-bottom: 40px;
+    }
+
+    .photos-item__item--best {
+        padding-bottom: 0;
+        margin-bottom: 50px;
+    }
+
+    .photo-item__text {
+        margin-bottom: 0;
+    }
+
+    .photo-item__likes {
+        position: absolute;
+        bottom: 24px;
+        display: flex;
+        width: 80%;
+    }
+
+    .photo-item__button--like {
+        order: 2;
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .photo-item__text-wrapper {
+        padding-top: 20px;
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+    .photo-item__image-wraper--best-of-day:after {
+        top: 57px;
+    }
+}
+
+
+@media screen and (min-width: $large) {
+    .photo-item__image-wraper--best-of-day:after {
+        right: 10vw;
+    }
 }

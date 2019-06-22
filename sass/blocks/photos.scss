@@ -19,3 +19,53 @@
     width: 280px;
     margin: 0 auto;
 }
+
+
+@media screen and (min-width: $medium) {
+    .photos__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: -40px;
+    }
+
+    .photos__item {
+        width: 300px;
+    }
+
+    .photos-item__item--best {
+        width: 100%;
+    }
+
+    .photos__best-wpraper {
+        position: relative;
+        width: 620px;
+        .photo-item__likes {
+            top: 20px;
+            right: 0;
+            bottom: auto;
+            width: 122px;
+        }
+    }
+}
+
+
+@media screen and (min-width: $large) {
+    .photos__list {
+        width: 940px;
+        margin: 0 auto;
+    }
+
+    .photos__best-wpraper {
+        width: 940px;
+    }
+
+    .photos__best-wpraper {
+        .photo-item__likes {
+            right: 28px;
+        }
+    }
+
+    .photos-item__item--best {
+        width: 100%;
+    }
+}
