@@ -2253,6 +2253,7 @@ img {
 .photos__best-wpraper {
   width: 280px;
   margin: 0 auto;
+  background: #f2f2f2;
 }
 
 @media screen and (min-width: 620px) {
@@ -2273,7 +2274,7 @@ img {
   }
   .photos__best-wpraper .photo-item__likes {
     top: 20px;
-    right: 0;
+    right: 28px;
     bottom: auto;
     width: 122px;
   }
@@ -2287,9 +2288,6 @@ img {
   .photos__best-wpraper {
     width: 940px;
   }
-  .photos__best-wpraper .photo-item__likes {
-    right: 28px;
-  }
   .photos-item__item--best {
     width: 100%;
   }
@@ -2297,6 +2295,10 @@ img {
 
 .photo-item {
   background: #f2f2f2;
+}
+
+.photos-item__item--best {
+  background: #fff;
 }
 
 .photo-item__image-wraper--best-of-day {
@@ -2319,6 +2321,7 @@ img {
 }
 
 .photo-item__image {
+  display: block;
   width: 100%;
   max-width: 100%;
   height: auto;

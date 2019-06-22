@@ -2,6 +2,10 @@
     background: #f2f2f2;
 }
 
+.photos-item__item--best {
+    background: #fff;
+}
+
 .photo-item__image-wraper {
     &--best-of-day {
         position: relative;
@@ -23,6 +27,7 @@
 }
 
 .photo-item__image {
+    display: block;
     width: 100%;
     max-width: 100%;
     height: auto;
