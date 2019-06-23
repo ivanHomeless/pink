@@ -138,3 +138,81 @@ if(submitBtn) {
 
     });
 }
+
+let photoControlBtn = document.querySelectorAll(".photo-control__btn");
+
+if(photoControlBtn.length) {
+    photoControlBtn.forEach(function(el, i) {
+        el.addEventListener("click", function (e) {
+            if(!el.classList.contains("photo-control__btn--active")){
+                photoControlBtn.forEach(function(e) {
+                    e.classList.remove("photo-control__btn--active");
+                });
+                el.classList.add("photo-control__btn--active");
+                let photoControlWrapper = document.querySelectorAll(".photo-control__wrapper");
+                photoControlWrapper.forEach(function(elem, k) {
+                    if(k == i) {
+                        elem.classList.add("photo-control__wrapper--active");
+                    }else {
+                        elem.classList.remove("photo-control__wrapper--active");
+                    }
+                });
+            }
+        });
+    });
+}
+
+
+let photoControlSlideBtn = document.querySelectorAll(".photo-control__slide-btn");
+
+if(photoControlSlideBtn.length) {
+    photoControlSlideBtn.forEach(function(el, i) {
+        el.onmousedown = function  (e) {
+            document.onmousemove = function (e) {
+                move(e, el);
+            }
+            document.onmouseup = function(e) {
+                document.onmousemove = null;
+            }
+        }
+        el.ontouchstart  = function  (e) {
+            document.ontouchmove = function (e) {
+                move(e, el);
+            }
+            document.ontouchend = function(e) {
+                document.ontouchmove = null;
+            }
+        }
+    });
+}
+
+function getCoords(elem) {
+  var box = elem.getBoundingClientRect();
+
+  return {
+    top: box.top + pageYOffset,
+    left: box.left + pageXOffset
+  };
+
+}
+
+function move(e, el) {
+    let sledeBar = el.parentNode;
+    let coordsBar = getCoords(sledeBar);
+    let barLeft = Math.round(coordsBar.left);
+    let min = 0;
+    let max = sledeBar.offsetWidth - 14;
+    let left = Math.round(e.pageX - barLeft);
+
+    if(e.touches[0].pageX) {
+        left = Math.round(e.touches[0].pageX - barLeft);
+    }
+
+    if(left < 0 ) {
+        left = min;
+    }
+    if(left > max) {
+        left = max;
+    }
+    el.style.left = left + "px";
+}
