@@ -204,7 +204,7 @@ function move(e, el) {
     let max = sledeBar.offsetWidth - 14;
     let left = Math.round(e.pageX - barLeft);
 
-    if(e.touches[0].pageX) {
+    if(e.touches) {
         left = Math.round(e.touches[0].pageX - barLeft);
     }
 
