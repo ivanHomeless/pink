@@ -2460,9 +2460,28 @@ img {
   border-color: #d22856;
 }
 
+.upload-photo__btn--upload:hover {
+  color: #fff;
+  background: #d22856;
+}
+
+.upload-photo__btn--upload:active {
+  color: #e06989;
+}
+
 .upload-photo__btn--reset {
   color: #dddfe0;
   border-color: #dddfe0;
+}
+
+.upload-photo__btn--reset:hover {
+  color: #b5b9be;
+  border-color: #b5b9be;
+}
+
+.upload-photo__btn--reset:active {
+  color: #cbced2;
+  background: #b5b9be;
 }
 
 @media screen and (min-width: 620px) {
@@ -2553,6 +2572,10 @@ img {
   border: 2px solid #d22856;
   border-radius: 50%;
   background: #f2f2f2;
+}
+
+.photo-control__slide-btn:active {
+  background: #d22856;
 }
 
 .photo-control__slide-icon {

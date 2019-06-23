@@ -30,14 +30,30 @@
     border-style: solid;
     border-width: 3px;
     border-radius: 40px;
+
     &--upload {
         margin-bottom: 12px;
         color: #d22856;
         border-color: #d22856;
+        &:hover {
+            color: #fff;
+            background: #d22856;
+        }
+        &:active {
+            color: #e06989;
+        }
     }
     &--reset {
         color: #dddfe0;
         border-color: #dddfe0;
+        &:hover {
+            color: #b5b9be;
+            border-color: #b5b9be;
+        }
+        &:active {
+            color: #cbced2;
+            background: #b5b9be;
+        }
     }
 }
 
