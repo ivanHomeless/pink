@@ -126,6 +126,10 @@
 
 
 @media screen and (min-width: $large) {
+    .photo-item {
+        margin-bottom: 55px;
+    }
+
     .photo-item__image-wraper--best-of-day:after {
         right: 10vw;
     }
