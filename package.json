@@ -3,19 +3,26 @@
   "version": "1.0.0",
   "description": "students project",
   "main": "gulpfile.js",
-  "dependencies": {
-    "gulp": "^4.0.0",
-    "gulp-sass": "^4.0.2",
-    "node-sass": "^4.11.0",
-    "normalize": "^0.3.1"
-  },
   "devDependencies": {
-    "gulp-concat": "^2.6.1",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "autoprefixer": "^9.6.0",
+    "browser-sync": "^2.26.7",
+    "del": "^4.1.1",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-posthtml": "^3.0.4",
     "gulp-rename": "^1.4.0",
-    "gulp-uglify": "^3.0.1"
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1",
+    "posthtml-include": "^1.2.0"
   },
   "scripts": {
-    "start": "gulp watch"
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
   },
   "repository": {
     "type": "git",
