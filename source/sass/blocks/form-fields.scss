@@ -199,7 +199,7 @@
         transform: translateY(-50%);
         width: 20px;
         height: 20px;
-        background: url("../images/form-fields-icon-phone.png") no-repeat;
+        @include sprite($icon-phone);
     }
 
     .form-fields__icon--email:before {
@@ -209,9 +209,7 @@
         right: 23px;
         z-index: 2;
         transform: translateY(-50%);
-        width: 18px;
-        height: 13px;
-        background: url("../images/form-fields-icon-email.png") no-repeat;
+        @include sprite($icon-email);
     }
 
     .form-fields__label {

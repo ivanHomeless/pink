@@ -3,7 +3,6 @@ var pageHeaderTop   =   document.querySelector('.page-header__top');
 var mainNavList     =   document.querySelector('.main-nav__list');
 
 
-
 mainNavButton.addEventListener("click", function (e) {
 
     if(mainNavButton.classList.contains('main-nav__button--close')) {

@@ -1,0 +1,22 @@
+{
+  "name": "pink",
+  "description": "students project",
+  "main": "build/index.html",
+  "authors": [
+    "Dmitry <double0fork@gmail.com>"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.1.1"
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/ivanHomeless/pink",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
