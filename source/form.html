@@ -3,7 +3,8 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="preload" href="./fonts/OpenSans/open-sans-v16-latin_cyrillic-300.woff2" as="font">
+    <link rel="preload" href="./fonts/OpenSans/open-sans-v16-latin_cyrillic-regular.woff2" as="font">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Pink</title>
@@ -13,8 +14,25 @@
         <div class="page-header__top">
             <div class="page-header__top-wraper">
                 <div class="page-header__top-inner">
-                    <a class="page-header__logo" href="index.html"></a>
-                    <button class="main-nav__button button"></button>
+                    <a class="page-header__logo" href="index.html">
+                        <svg class="logo logo__mobile" width="75" height="22">
+                            <use xlink:href="/images/sprite.svg#logo-mobile">
+                        </svg>
+                        <svg class="logo logo__tablet" width="150" height="45">
+                            <use xlink:href="/images/sprite.svg#logo-tablet">
+                        </svg>
+                        <svg class="logo logo__desctop" width="150" height="45">
+                            <use xlink:href="/images/sprite.svg#logo-desctop">
+                        </svg>
+                    </a>
+                    <button class="main-nav__button button">
+                        <svg class="main-nav__icon" width="50" height="24">
+                            <use xlink:href="/images/sprite.svg#menu-burger">
+                        </svg>
+                        <svg class="main-nav__icon--close" width="24" height="24">
+                            <use xlink:href="/images/sprite.svg#menu-close">
+                        </svg>
+                    </button>
                 </div>
                 <nav class="main-nav">
                     <ul class="main-nav__list site-list">
@@ -61,42 +79,66 @@
                         <li class="form-fields__item">
                             <div class="form-fields__wrap">
                                 <input class="form-fields__input-checkbox" id="selfy" type="checkbox" name="travel-achievement" value="1">
-                                <label class="form-fields__custom-checkbox" for="selfy"></label>
+                                <label class="form-fields__custom-checkbox" for="selfy">
+                                    <svg class="form-fields__checkbox-icon" width="30" height="25">
+                                        <use xlink:href="/images/sprite.svg#form-fields-checkox-tick">
+                                   </svg>
+                                </label>
                                 <label class="form-fields__label" for="selfy">Сделал селфи с акулой</label>
                             </div>
                         </li>
                         <li class="form-fields__item">
                             <div class="form-fields__wrap">
                                 <input class="form-fields__input-checkbox" id="chuck" type="checkbox" name="travel-achievement" value="1">
-                                <label class="form-fields__custom-checkbox" for="chuck"></label>
-                                 <label class="form-fields__label" for="chuck">Видел Чака Нориса</label>
+                                <label class="form-fields__custom-checkbox" for="chuck">
+                                    <svg class="form-fields__checkbox-icon" width="30" height="25">
+                                        <use xlink:href="/images/sprite.svg#form-fields-checkox-tick">
+                                   </svg>
+                                </label>
+                                <label class="form-fields__label" for="chuck">Видел Чака Нориса</label>
                             </div>
                         </li>
                         <li class="form-fields__item">
                             <div class="form-fields__wrap">
                                 <input class="form-fields__input-checkbox" id="keep-tower" type="checkbox" name="travel-achievement" value="1">
-                                <label class="form-fields__custom-checkbox" for="keep-tower"></label>
+                                <label class="form-fields__custom-checkbox" for="keep-tower">
+                                    <svg class="form-fields__checkbox-icon" width="30" height="25">
+                                        <use xlink:href="/images/sprite.svg#form-fields-checkox-tick">
+                                   </svg>
+                                </label>
                                 <label class="form-fields__label" for="keep-tower">Удержал башню</label>
                             </div>
                         </li>
                         <li class="form-fields__item">
                             <div class="form-fields__wrap">
                                 <input class="form-fields__input-checkbox" id="burn" type="checkbox" name="travel-achievement" value="1">
-                                <label class="form-fields__custom-checkbox" for="burn"></label>
+                                <label class="form-fields__custom-checkbox" for="burn">
+                                    <svg class="form-fields__checkbox-icon" width="30" height="25">
+                                        <use xlink:href="/images/sprite.svg#form-fields-checkox-tick">
+                                   </svg>
+                                </label>
                                 <label class="form-fields__label" for="burn">Обгорел на пляже</label>
                             </div>
                         </li>
                         <li class="form-fields__item">
                             <div class="form-fields__wrap">
                                 <input class="form-fields__input-checkbox" id="suvenier" type="checkbox" name="travel-achievement" value="1">
-                                <label class="form-fields__custom-checkbox" for="suvenier"></label>
+                                <label class="form-fields__custom-checkbox" for="suvenier">
+                                    <svg class="form-fields__checkbox-icon" width="30" height="25">
+                                        <use xlink:href="/images/sprite.svg#form-fields-checkox-tick">
+                                   </svg>
+                                </label>
                                 <label class="form-fields__label" for="suvenier">Накупил сувениров</label>
                             </div>
                         </li>
                         <li class="form-fields__item">
                             <div class="form-fields__wrap">
                                 <input class="form-fields__input-checkbox" id="hotel" type="checkbox" name="travel-achievement" value="1">
-                                <label class="form-fields__custom-checkbox" for="hotel"></label>
+                                <label class="form-fields__custom-checkbox" for="hotel">
+                                    <svg class="form-fields__checkbox-icon" width="30" height="25">
+                                        <use xlink:href="/images/sprite.svg#form-fields-checkox-tick">
+                                   </svg>
+                                </label>
                                 <label class="form-fields__label" for="hotel">Разгромир отель</label>
                             </div>
                         </li>
@@ -109,14 +151,20 @@
                     <div class="form-fields__contact-wraper">
                         <div class="form-fields__item">
                             <label class="form-fields__label" for="phone">Номер телефона</label>
-                            <div class="form-fields__wrap form-fields__icon form-fields__icon--phone">
+                            <div class="form-fields__wrap form-fields__icon">
                                 <input class="form-fields__input" type="text" name="phone" id="phone" placeholder="Номер, пожалуйста">
+                                <svg class="form-fields__icon--phone" width="20" height="20">
+                                    <use xlink:href="/images/sprite.svg#icon-phone">
+                                </svg>
                             </div>
                         </div>
                         <div class="form-fields__item">
                             <label class="form-fields__label" for="email">Адрес почты</label>
-                            <div class="form-fields__wrap form-fields__icon form-fields__icon--email">
+                            <div class="form-fields__wrap form-fields__icon">
                                 <input class="form-fields__input" type="text" name="email" id="email" placeholder="Введите почту*">
+                                <svg class="form-fields__icon--phone" width="20" height="20">
+                                    <use xlink:href="/images/sprite.svg#icon-email">
+                                </svg>
                             </div>
                         </div>
                     </div>
@@ -186,25 +234,45 @@
             </div>
         </form>
     </main>
-    <footer class="page-footer page-footer--inner">
+    <footer class="page-footer">
         <div class="page-footer__wrap container">
-            <a href="index.html" class="page-footer__logo"></a>
+            <a href="index.html" class="page-footer__logo">
+                <svg class="logo__footer" width="150" height="42">
+                    <use xlink:href="/images/sprite.svg#footer-logo">
+                </svg>
+            </a>
             <div class="page-footer__social social">
                 <ul class="social__list">
                     <li class="social__item">
-                        <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+                        <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">
+                            <svg class="social__icon" width="20" height="20">
+                                <use xlink:href="/images/sprite.svg#social-link-twiter">
+                            </svg>
+                        </a>
                     </li>
                     <li class="social__item">
-                        <a class="social__link social__link--facebook" href="https://twitter.com/htmlacademy">Мы в Фейсбуке</a>
+                        <a class="social__link social__link--facebook" href="https://twitter.com/htmlacademy">
+                            <svg class="social__icon" width="20" height="20">
+                                <use xlink:href="/images/sprite.svg#social-link-facebook">
+                            </svg>
+                        </a>
                     </li>
                     <li class="social__item">
-                        <a class="social__link social__link--youtube" href="https://twitter.com/htmlacademy">Мы в Фейсбуке</a>
+                        <a class="social__link social__link--youtube" href="https://twitter.com/htmlacademy">
+                            <svg class="social__icon" width="20" height="20">
+                                <use xlink:href="/images/sprite.svg#social-link-youtube">
+                            </svg>
+                        </a>
                     </li>
                 </ul>
             </div>
             <div class="page-footer__copyright copyright">
               <span class="copyright__text">Разработано:</span>
-              <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+              <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+                <svg class="copyright__icon" width="28" height="35">
+                    <use xlink:href="/images/sprite.svg#social-link-htmlacademy">
+                </svg>
+              </a>
             </div>
         </div>
     </footer>

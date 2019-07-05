@@ -44,6 +44,11 @@
     border-color: #d22856;
 }
 
+.form-fields__icon--phone,
+.form-fields__icon--email {
+    display: none;
+}
+
 .form-fields__textarea {
     min-height: 200px;
     padding-top: 17px;
@@ -109,15 +114,20 @@
     border-color: #d22856;
 }
 
-.form-fields__input-checkbox:checked + .form-fields__custom-checkbox:before {
+.form-fields__checkbox-icon {
+    display: none;
+}
+
+.form-fields__input-checkbox:checked + .form-fields__custom-checkbox .form-fields__checkbox-icon {
     content: "";
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 22px;
-    height: 16px;
+    display: block;
+    width: 30px;
+    height: 25px;
     transform: translate(-50%, -50%);
-    background: url("../images/form-fields-checkox-tick.svg") no-repeat;
+    fill: #d22856;
 }
 
 .form-fields__custom-radio {
@@ -187,29 +197,31 @@
         z-index: 1;
         height: 58px;
         width: 58px;
+        fill: #d22856;
         background: #e5e5e5;
     }
 
-    .form-fields__icon--phone:before {
+    .form-fields__icon--phone {
         content: "";
         position: absolute;
         top: 50%;
         right: 22px;
         z-index: 2;
         transform: translateY(-50%);
+        display: inline;
         width: 20px;
         height: 20px;
-        @include sprite($icon-phone);
+        fill: #d22856;
     }
 
-    .form-fields__icon--email:before {
+    .form-fields__icon--email {
         content: "";
         position: absolute;
         top: 50%;
         right: 23px;
         z-index: 2;
+        display: inline;
         transform: translateY(-50%);
-        @include sprite($icon-email);
     }
 
     .form-fields__label {

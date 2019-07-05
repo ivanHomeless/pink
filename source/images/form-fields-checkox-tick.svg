@@ -1,3 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="16" viewBox="0 0 22 16">
-  <image id="tick.svg" width="22" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAQCAYAAAAS7Y8mAAABEklEQVQ4ja3TvytFYRwH4Of6MVhMFtlkYDBKycANC4NBhjsog5Lh/jfEJjIoGwoDMhpltdlMFrck9OY9dTrnXt17z/ks5/S+b0+fvr1v5Wl8XYkZwzUaPbmtYug9RtFbFpygI3jBYhnwJB4i+owZvPbljnWO3mIoolW8hY0ijVuiReCpFPqIuTQa0s0opnGDwYgu4T17KDTeQh2VHJFPW2jSeBf9mMAOfnKn/jKLy4iGq7XaCk0a1+P/NvZaNK+mmt5h+T80gfexie+IH4SXk0EvMBDRFXzkpCZwyCE2Ih5mfhTxhRR61S4qcytO4jegNQzHuYb5n2MNn+2gWTjBv3CM+bjWMRrS7IGcRqiBs25Q+AX6NTtOW9CvGwAAAABJRU5ErkJggg=="/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<path d="M22.7,5.2c-0.4-0.4-1-0.4-1.4,0L7.9,18.6L3,13.7c-0.4-0.4-1-0.4-1.4,0c-0.4,0.4-0.4,1,0,1.4l5.6,5.6C7.4,20.9,7.7,21,7.9,21
+	c0.3,0,0.5-0.1,0.7-0.3L22.7,6.6C23.1,6.2,23.1,5.6,22.7,5.2z"/>
 </svg>

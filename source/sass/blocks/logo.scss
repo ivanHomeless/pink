@@ -1,0 +1,68 @@
+.page-header__logo .logo:hover {
+    fill: #d22856;
+}
+
+.page-header__logo .logo:active {
+    fill-opacity: .3;
+    fill: #6c7682;
+}
+
+.logo__mobile {
+    fill: #fff;
+}
+
+.logo__tablet {
+    display: none;
+    fill: #fff;
+}
+
+.logo__desctop {
+    display: none;
+    fill: #fff;
+}
+
+.logo__desctop .st1 {
+    fill: #000;
+}
+
+.logo__footer {
+    .logo__tablet {
+        display: inline;
+    }
+    .logo__mobile {
+        display: none;
+    }
+}
+
+.logo__footer {
+    fill: #283645;
+}
+
+.page-footer__logo:hover .logo__footer {
+    fill: #D22856;
+}
+
+.page-footer__logo:active .logo__footer {
+    fill: #283645;
+    fill-opacity: .3;
+}
+
+
+@media screen and (min-width: $medium) {
+    .logo__mobile {
+        display: none;
+    }
+    .logo__tablet {
+        display: inline;
+    }
+}
+
+
+@media screen and (min-width: $large) {
+    .logo__tablet {
+        display: none;
+    }
+    .logo__desctop {
+        display: inline;
+    }
+}

@@ -19,14 +19,6 @@
     width: 150px;
     height: 42px;
     margin-bottom: 40px;
-    background: url('../images/footer-logo.svg') no-repeat;
-    &:hover {
-        background: url('../images/footer-logo-hover.svg') no-repeat;
-    }
-    &:active {
-        opacity: .3;
-        background: url('../images/footer-logo.svg') no-repeat;
-    }
 }
 
 .page-footer__social {

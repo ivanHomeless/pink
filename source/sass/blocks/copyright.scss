@@ -10,14 +10,18 @@
     width: 27px;
     height: 36px;
     background-size: contain;
-    background: url('../images/social-link-htmlacademy.svg') no-repeat;
-    &:hover {
-        background: url('../images/social-link-htmlacademy-hover.svg') no-repeat;
-    }
-    &:active {
-        opacity: .3;
-        background: url('../images/social-link-htmlacademy-hover.svg') no-repeat;
-    }
+}
+
+.copyright__icon {
+    fill: #d22856;
+}
+
+.copyright__link:hover .copyright__icon {
+    fill: #283645;
+}
+
+.copyright__link:active .copyright__icon {
+    fill-opacity: .3;
 }
 
 

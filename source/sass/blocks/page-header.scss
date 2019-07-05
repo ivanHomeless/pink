@@ -30,14 +30,6 @@
     display: block;
     width: 75px;
     height: 22px;
-    background: url('../images/logo-mobile.svg') no-repeat;
-    &:hover {
-        background: url('../images/logo-mobile-hover.svg') no-repeat;
-    }
-    &:active {
-        opacity: .3;
-        background: url('../images/logo-mobile.svg') no-repeat;
-    }
 }
 
 .page-header__hand-icon {
@@ -79,14 +71,6 @@
     .page-header__logo {
         width: 150px;
         height: 40px;
-        background: url('../images/logo-tablet.svg') no-repeat;
-        &hover {
-            background: url('../images/logo-tablet-hover.svg') no-repeat;
-        }
-        &:active {
-            opacity: .3;
-            background: url('../images/logo-tablet.svg') no-repeat;
-        }
     }
 
     .page-header__hand-icon {
@@ -141,17 +125,6 @@
     .page-header__top-inner {
         width: 150px;
         margin: 0;
-    }
-
-    .page-header__logo {
-        background: url('../images/logo-desctop.svg') no-repeat;
-        &:hover {
-            background: url('../images/logo-desctop-hover.svg') no-repeat;
-        }
-        &:active {
-            opacity: .3;
-            background: url('../images/logo-desctop.svg') no-repeat;
-        }
     }
 
     .page-header__hand-icon {

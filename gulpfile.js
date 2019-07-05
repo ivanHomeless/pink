@@ -56,7 +56,7 @@ gulp.task("style", function() {
         .pipe(gulp.dest("build/css"))
         .pipe(minify())
         .pipe(rename({ suffix: ".min" }))
-        .pipe(sourcemaps.write())
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest("build/css"))
         .pipe(server.stream());
 });
@@ -87,7 +87,7 @@ gulp.task("script", function() {
 
 gulp.task("images", function() {
     return gulp.src([
-        "source/images/**/*.{jpg,jpeg,png,svg}",
+        "source/images/**/*.{jpg,jpeg,png}",
         "source/pictures/**/*.{jpg,jpeg,png,svg}"
     ], {
         base: "source"
@@ -111,7 +111,19 @@ gulp.task("webp", function() {
 });
 
 gulp.task("sprite-svg", function() {
-    return gulp.src("source/images/icon-slide*")
+    return gulp.src([
+        "source/images/icon-*.svg",
+        "source/images/logo-*.svg",
+        "source/images/footer-*.svg",
+        "source/images/menu-*.svg",
+        "source/images/os-*.svg",
+        "source/images/photo-*.svg",
+        "source/images/review-*.svg",
+        "source/images/slider-*.svg",
+        "source/images/form-*.svg",
+        "source/images/social-*.svg",
+        "source/images/tariff-icon-*.svg",
+        ])
         .pipe(svgstore({
             inlineSvg: true
         }))
@@ -123,9 +135,8 @@ gulp.task("sprite-svg", function() {
 
 gulp.task("sprite-img", function () {
   var spriteData = gulp.src([
-        "source/images/icon-email.png",
-        "source/images/icon-phone.png"
-    ])
+        "none"
+    ], {allowEmpty: true })
   .pipe(imagemin([
         imagemin.optipng({optimizationLevel: 3}),
         imagemin.jpegtran({progressive: true}),

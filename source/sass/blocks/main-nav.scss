@@ -7,28 +7,39 @@
     }
 }
 
-.main-nav__button {
+.main-nav__button .main-nav__icon--close {
+    display: none;
+}
+
+.main-nav__button--close .main-nav__icon {
+    display: none;
+}
+
+.main-nav__button--close .main-nav__icon--close {
+    display: inline;
+}
+
+
+.main-nav__icon {
     width: 50px;
     height: 24px;
-    background-image: url('../images/menu-burger.svg');
+    fill: #fff;
     &:hover {
-        background-image: url('../images/menu-burger-hover.svg');
+        fill: #d22856;
     }
     &:active {
         opacity: .3;
-        background-image: url('../images/menu-burger-hover.svg');
     }
     &--close {
         width: 24px;
         height: 24px;
-        background-image: url('../images/menu-close.svg');
+        fill: #fff;
     }
     &--close:hover {
-        background-image: url('../images/menu-close-hover.svg');
+        fill: #d22856;
     }
     &--close:active {
         opacity: .3;
-        background-image: url('../images/menu-close-hover.svg');
     }
 }
 

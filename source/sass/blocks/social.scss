@@ -22,31 +22,28 @@
     border-radius: 50%;
     font-size: 0;
     line-height: 0;
-    &:before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        right: 50%;
-        width: 20px;
-        height: 20px;
-        transform: translate(50%, -50%);
-    }
-    &--twitter:before {
-        background: url('../images/social-link-twiter.svg') no-repeat;
-    }
-    &--facebook:before {
-        width: 10px;
-        background: url('../images/social-link-facebook.svg') no-repeat;
-    }
-    &--youtube:before {
-        background: url('../images/social-link-youtube.svg') no-repeat;
-    }
     &:hover {
         border: 2px solid #283645;
     }
     &:active {
         opacity: .3;
     }
+}
+
+.social__icon {
+    fill: #d22856;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social__icon:active {
+    opacity: .3;
+}
+
+.social__link--youtube .social__icon {
+    left: 56%
 }
 
 

@@ -45,6 +45,11 @@
     &--hit:after {
         content: '';
         position: absolute;
+        top: 0;
+        left: 0;
+        width: 74px;
+        height: 73px;
+        background: url("../images/tariff-hit-mobile.png") no-repeat;
     }
 }
 
@@ -93,12 +98,10 @@
     display: inline-block;
     vertical-align: top;
     &--yes {
-        background: url('../images/tariff-icon-yes.svg') no-repeat;
+        fill: #3dc644;
     }
     &--none {
-        width: 30px;
-        height: 30px;
-        background: url('../images/tariff-icon-none.svg') no-repeat;
+        fill: #f25b26;
     }
 }
 
@@ -176,6 +179,12 @@
         width: 155px;
     }
 
+    .tariff_title--hit:after {
+        width: 61px;
+        height: 61px;
+        background: url("../images/tariff-hit-tablet.png") no-repeat;
+    }
+
     .tariff__name {
         font-size: 16px;
         line-height: 30px;
@@ -234,6 +243,10 @@
 
     .tariff_title {
         width: 235px;
+    }
+
+    .tariff_title--hit:after {
+        background: url("../images/tariff-hit-tablet.png") no-repeat;
     }
 
     .tariff__name {

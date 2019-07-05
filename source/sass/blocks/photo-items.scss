@@ -70,6 +70,10 @@
     cursor: pointer;
 }
 
+.photo-item__button {
+    background: none;
+}
+
 .photo-item__button--like {
     align-self: center;
     width: 13px;
@@ -77,7 +81,7 @@
     margin-right: 19px;
     border: none;
     outline: none;
-    background: url("../images/photo-item-button--like.png") no-repeat;
+    fill: #d22856;
 }
 
 .photo-item__likes-cnt {
